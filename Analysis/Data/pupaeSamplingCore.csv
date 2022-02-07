@@ -1,0 +1,1082 @@
+﻿SampleID,Transect,Site,ExposureLength,TrapID,Host,Parasitoid,Parasitised,Group
+50,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+53,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+55,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+83,Paluma,P880,short,B5,birchii,Unparasitised,FALSE,Core
+88,Paluma,P880,short,B5,palidifrons,Unparasitised,FALSE,Core
+89,Paluma,P880,short,B5,rubida,Unparasitised,FALSE,Core
+106,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+107,Kirrama,K070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+112,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+258,Paluma,P880,long,B8,NA,Unparasitised,FALSE,Core
+259,Paluma,P880,long,B8,palidifrons,Ganaspis sp. 1,TRUE,Core
+260,Paluma,P880,long,B8,palidifrons,Unparasitised,FALSE,Core
+261,Paluma,P880,long,B8,palidifrons,Unparasitised,FALSE,Core
+262,Paluma,P880,long,B8,NA,Unparasitised,FALSE,Core
+263,Paluma,P880,long,B8,immigrans,Pteromalidae sp. 1,TRUE,Core
+266,Paluma,P880,long,B4,rubida,Leptolamina sp. 1,TRUE,Core
+270,Paluma,P880,long,B4,palidifrons,Unparasitised,FALSE,Core
+277,Paluma,P880,medium,B15,NA,Unparasitised,FALSE,Core
+291,Paluma,P070,short,B1,rubida,Unparasitised,FALSE,Core
+294,Paluma,P070,short,B1,bunnanda,Chalcidoidea sp. 1,TRUE,Core
+295,Paluma,P070,short,B1,NA,Unparasitised,FALSE,Core
+296,Paluma,P070,short,B1,sulfurigaster,Unparasitised,FALSE,Core
+301,Paluma,P070,short,B5,bipectinata,Unparasitised,FALSE,Core
+305,Paluma,P070,short,B5,palidifrons,Unparasitised,FALSE,Core
+313,Kirrama,K070,long,B6,rubida,Unparasitised,FALSE,Core
+314,Kirrama,K070,long,B6,NA,Unparasitised,FALSE,Core
+321,Kirrama,K070,long,B6,NA,Unparasitised,FALSE,Core
+324,Kirrama,K730,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+327,Kirrama,K730,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+381,Kirrama,K730,medium,B15,palidifrons,Unparasitised,FALSE,Core
+384,Kirrama,K730,medium,B15,pseudoananassae,Unparasitised,FALSE,Core
+395,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+397,Kirrama,K730,medium,B9,sulfurigaster,Unparasitised,TRUE,Core
+400,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+410,Paluma,P070,long,B2,NA,Leptopilina sp. 1,TRUE,Core
+414,Paluma,P070,long,B2,NA,Unidentified,TRUE,Core
+417,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+419,Paluma,P070,long,B4,NA,Unparasitised,FALSE,Core
+421,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+422,Paluma,P070,long,B4,bipectinata,Unparasitised,TRUE,Core
+425,Paluma,P070,long,B4,pseudoananassae,Unparasitised,FALSE,Core
+426,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+427,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+429,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+431,Paluma,P070,long,B8,rubida,Unparasitised,FALSE,Core
+432,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+434,Paluma,P070,long,B14,NA,Unparasitised,FALSE,Core
+435,Paluma,P070,long,B14,NA,Leptopilina sp. 1,TRUE,Core
+436,Paluma,P070,long,B14,NA,Unparasitised,FALSE,Core
+439,Paluma,P070,long,B14,NA,Leptopilina sp. 1,TRUE,Core
+440,Paluma,P070,long,B14,NA,Leptopilina sp. 1,TRUE,Core
+441,Paluma,P070,long,B14,NA,Leptopilina sp. 1,TRUE,Core
+514,Kirrama,K390,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+518,Kirrama,K390,medium,B9,rubida,Unparasitised,FALSE,Core
+519,Kirrama,K390,medium,B9,rubida,Unparasitised,FALSE,Core
+525,Kirrama,K390,medium,B1,NA,Unparasitised,FALSE,Core
+526,Kirrama,K390,medium,B1,NA,Unparasitised,FALSE,Core
+528,Kirrama,K390,medium,B1,pseudoananassae,Unparasitised,FALSE,Core
+529,Kirrama,K390,medium,B1,NA,Unparasitised,FALSE,Core
+554,Kirrama,K390,long,B14,palidifrons,Unparasitised,FALSE,Core
+557,Kirrama,K390,long,B14,rubida,Unparasitised,FALSE,Core
+568,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+569,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+574,Kirrama,K390,medium,B13,bipectinata,Unparasitised,FALSE,Core
+818,Kirrama,K070,medium,B7,sulfurigaster,Unparasitised,FALSE,Core
+820,Kirrama,K070,medium,B7,sulfurigaster,Unparasitised,FALSE,Core
+821,Kirrama,K070,medium,B7,sulfurigaster,Unparasitised,FALSE,Core
+822,Kirrama,K070,medium,B7,Drosophila sp. 1,Unparasitised,FALSE,Core
+825,Kirrama,K070,medium,B7,Drosophila sp. 1,Unparasitised,FALSE,Core
+846,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+847,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+848,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+860,Kirrama,K070,medium,B11,NA,Unparasitised,FALSE,Core
+861,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+888,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+889,Paluma,P070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+1146,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+1149,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+1152,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+1153,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+1155,Paluma,P880,long,B12,rubida,Leptolamina sp. 1,TRUE,Core
+1157,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+1158,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+1160,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+1161,Paluma,P880,long,B12,rubida,Leptolamina sp. 1,TRUE,Core
+1170,Paluma,P880,long,B2,NA,Unparasitised,FALSE,Core
+1182,Paluma,P880,medium,B11,pseudotakahashii,Leptopilina sp. 1,TRUE,Core
+1183,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+1432,Paluma,P350,long,B6,NA,Unparasitised,TRUE,Core
+1435,Paluma,P350,long,B10,NA,Unparasitised,FALSE,Core
+1455,Paluma,P350,medium,B5,NA,Unparasitised,FALSE,Core
+1459,Paluma,P350,medium,B3,pseudoananassae,Unparasitised,FALSE,Core
+1463,Paluma,P350,medium,B3,Drosophila sp. 1,Unparasitised,FALSE,Core
+1465,Paluma,P350,medium,B3,sulfurigaster,Unparasitised,FALSE,Core
+1466,Paluma,P350,long,B2,NA,Unparasitised,TRUE,Core
+1468,Paluma,P350,long,B2,NA,Unparasitised,TRUE,Core
+1474,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+1480,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+1551,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+1553,Paluma,P350,short,B9,NA,Asobara sp. 1,TRUE,Core
+1556,Paluma,P350,short,B15,NA,Unparasitised,TRUE,Core
+1557,Paluma,P350,short,B15,rubida,Asobara sp. 2,TRUE,Core
+1566,Paluma,P350,short,B3,palidifrons,Unparasitised,FALSE,Core
+1568,Paluma,P350,short,B3,rubida,Unparasitised,FALSE,Core
+1571,Paluma,P350,short,B1,rubida,Asobara sp. 1,TRUE,Core
+1572,Paluma,P350,short,B1,rubida,Unparasitised,FALSE,Core
+1576,Paluma,P350,short,B1,rubida,Unparasitised,FALSE,Core
+1644,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+1647,Kirrama,K390,short,B13,NA,Unparasitised,FALSE,Core
+1648,Kirrama,K390,short,B13,rubida,Pteromalidae sp. 1,TRUE,Core
+1649,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+1650,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+1656,Kirrama,K390,short,B1,rubida,Unparasitised,FALSE,Core
+1661,Kirrama,K390,short,B9,NA,Unparasitised,FALSE,Core
+1736,Kirrama,K390,short,B11,NA,Unparasitised,FALSE,Core
+1737,Kirrama,K390,short,B11,pseudoananassae,Unparasitised,FALSE,Core
+1738,Kirrama,K390,short,B15,rubida,Unparasitised,FALSE,Core
+1866,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+1867,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+1869,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+1870,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+1872,Kirrama,K730,short,B13,pseudotakahashii,Unparasitised,FALSE,Core
+1894,Kirrama,K730,short,B3,rubida,Pteromalidae sp. 1,TRUE,Core
+1896,Kirrama,K730,short,B3,pseudotakahashii,Unparasitised,FALSE,Core
+1898,Kirrama,K730,short,B11,rubida,Unparasitised,FALSE,Core
+1903,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+1905,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+2579,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+2580,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+2586,Kirrama,K730,long,B10,rubida,Diapriidae sp. 1,TRUE,Core
+2589,Kirrama,K730,long,B10,NA,Unparasitised,FALSE,Core
+2659,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+2660,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+2662,Paluma,P880,short,B15,rubida,Leptolamina sp. 1,TRUE,Core
+2664,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+2675,Paluma,P880,short,B1,palidifrons,Unparasitised,FALSE,Core
+2678,Paluma,P880,short,B1,palidifrons,Unparasitised,FALSE,Core
+2681,Paluma,P880,short,B1,NA,Unparasitised,FALSE,Core
+2691,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+2692,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+2714,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+2716,Kirrama,K070,short,B15,rubida,Leptolamina sp. 1,TRUE,Core
+2717,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+2718,Kirrama,K070,short,B15,rubida,Unparasitised,FALSE,Core
+2867,Paluma,P880,long,B8,palidifrons,Unparasitised,FALSE,Core
+2870,Paluma,P880,long,B8,rubida,Unparasitised,FALSE,Core
+2876,Paluma,P880,long,B4,NA,Unparasitised,TRUE,Core
+2878,Paluma,P880,long,B4,NA,Unparasitised,TRUE,Core
+2880,Paluma,P880,long,B4,NA,Unparasitised,FALSE,Core
+2881,Paluma,P880,long,B4,rubida,Unparasitised,TRUE,Core
+2888,Paluma,P880,medium,B15,pseudotakahashii,Unparasitised,FALSE,Core
+2898,Paluma,P070,short,B1,bipectinata,Unparasitised,FALSE,Core
+2902,Paluma,P070,short,B1,bipectinata,Leptopilina sp. 1,TRUE,Core
+2904,Paluma,P070,short,B1,NA,Unparasitised,FALSE,Core
+2905,Paluma,P070,short,B1,bipectinata,Unparasitised,FALSE,Core
+2912,Paluma,P070,short,B5,NA,Unparasitised,FALSE,Core
+2914,Kirrama,K070,long,B6,NA,Unparasitised,FALSE,Core
+2924,Kirrama,K070,long,B6,palidifrons,Asobara sp. 1,TRUE,Core
+2928,Kirrama,K070,long,B6,NA,Unparasitised,FALSE,Core
+3002,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+3004,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+3018,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+3020,Paluma,P070,long,B2,NA,Leptopilina sp. 1,TRUE,Core
+3023,Paluma,P070,long,B2,NA,Leptopilina sp. 1,TRUE,Core
+3027,Paluma,P070,long,B4,NA,Unparasitised,FALSE,Core
+3028,Paluma,P070,long,B4,NA,Unparasitised,FALSE,Core
+3032,Paluma,P070,long,B4,NA,Unparasitised,TRUE,Core
+3033,Paluma,P070,long,B4,NA,Unparasitised,TRUE,Core
+3034,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+3037,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+3039,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+3040,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+3042,Paluma,P070,long,B14,NA,Unparasitised,FALSE,Core
+3043,Paluma,P070,long,B14,NA,Unparasitised,FALSE,Core
+3129,Kirrama,K390,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+3132,Kirrama,K390,medium,B1,pseudoananassae,Unparasitised,TRUE,Core
+3135,Kirrama,K390,medium,B1,NA,Unparasitised,TRUE,Core
+3137,Kirrama,K390,medium,B1,rubida,Unparasitised,FALSE,Core
+3184,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+3185,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+3427,Kirrama,K070,medium,B7,NA,Unparasitised,FALSE,Core
+3428,Kirrama,K070,medium,B7,pseudoananassae,Unparasitised,FALSE,Core
+3429,Kirrama,K070,medium,B7,pseudoananassae,Unparasitised,FALSE,Core
+3431,Kirrama,K070,medium,B7,rubida,Leptopilina sp. 1,TRUE,Core
+3450,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+3454,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+3456,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+3457,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+3470,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+3471,Kirrama,K070,medium,B11,bipectinata,Unparasitised,FALSE,Core
+3495,Paluma,P070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+3497,Paluma,P070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+3755,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+3756,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+3757,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+3759,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+3760,Paluma,P880,medium,B13,palidifrons,Unparasitised,TRUE,Core
+3762,Paluma,P880,long,B12,NA,Unparasitised,TRUE,Core
+3764,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+3765,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+3768,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+3781,Paluma,P880,long,B2,palidifrons,Unparasitised,FALSE,Core
+3782,Paluma,P880,long,B2,NA,Unparasitised,FALSE,Core
+3787,Paluma,P880,medium,B11,bipectinata,Unparasitised,FALSE,Core
+3789,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+3791,Paluma,P880,medium,B11,palidifrons,Unparasitised,FALSE,Core
+4042,Paluma,P350,long,B10,palidifrons,Unparasitised,FALSE,Core
+4045,Paluma,P350,long,B10,palidifrons,Asobara sp. 2,TRUE,Core
+4046,Paluma,P350,long,B10,palidifrons,Asobara sp. 1,TRUE,Core
+4052,Paluma,P350,medium,B1,NA,Unparasitised,FALSE,Core
+4056,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+4058,Paluma,P350,medium,B5,birchii,Unparasitised,FALSE,Core
+4060,Paluma,P350,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+4062,Paluma,P350,medium,B5,rubida,Unparasitised,FALSE,Core
+4066,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+4067,Paluma,P350,medium,B3,NA,Unparasitised,FALSE,Core
+4069,Paluma,P350,medium,B3,birchii,Unparasitised,FALSE,Core
+4073,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+4079,Paluma,P350,long,B2,rubida,Unparasitised,FALSE,Core
+4083,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+4085,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+4089,Paluma,P350,medium,B15,rubida,Diapriidae sp. 1,TRUE,Core
+4155,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+4158,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+4161,Paluma,P350,short,B9,birchii,Unparasitised,FALSE,Core
+4162,Paluma,P350,short,B15,rubida,Asobara sp. 2,TRUE,Core
+4167,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+4168,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+4169,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+4172,Paluma,P350,short,B3,rubida,Asobara sp. 1,TRUE,Core
+4174,Paluma,P350,short,B3,rubida,Unparasitised,TRUE,Core
+4250,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+4253,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+4254,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+4255,Kirrama,K390,short,B13,pseudoananassae,Unparasitised,FALSE,Core
+4256,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+4265,Kirrama,K390,short,B1,NA,Unparasitised,FALSE,Core
+4474,Kirrama,K730,short,B13,palidifrons,Unparasitised,FALSE,Core
+4477,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+4479,Kirrama,K730,short,B13,palidifrons,Unparasitised,FALSE,Core
+4480,Kirrama,K730,short,B13,palidifrons,Unparasitised,FALSE,Core
+4481,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+4500,Kirrama,K730,short,B3,rubida,Unparasitised,FALSE,Core
+4504,Kirrama,K730,short,B3,rubida,Unparasitised,FALSE,Core
+4505,Kirrama,K730,short,B3,pseudoananassae,Unparasitised,FALSE,Core
+4513,Kirrama,K730,short,B11,palidifrons,Unparasitised,FALSE,Core
+5187,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+5188,Kirrama,K730,long,B16,sulfurigaster,Unparasitised,FALSE,Core
+5191,Kirrama,K730,long,B16,birchii,Unparasitised,FALSE,Core
+5196,Kirrama,K730,long,B10,NA,Unparasitised,FALSE,Core
+5199,Kirrama,K730,long,B10,rubida,Unparasitised,FALSE,Core
+5201,Kirrama,K730,long,B10,rubida,Diapriidae sp. 1,TRUE,Core
+5268,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+5269,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+5276,Paluma,P880,short,B11,NA,Unparasitised,FALSE,Core
+5280,Paluma,P880,short,B11,NA,Unparasitised,FALSE,Core
+5301,Paluma,P880,short,B5,palidifrons,Unparasitised,FALSE,Core
+5327,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+5328,Kirrama,K070,short,B15,rubida,Unparasitised,FALSE,Core
+5474,Paluma,P880,long,B8,palidifrons,Unparasitised,FALSE,Core
+5485,Paluma,P880,long,B4,NA,Leptolamina sp. 1,TRUE,Core
+5488,Paluma,P880,long,B4,rubida,Unparasitised,FALSE,Core
+5489,Paluma,P880,long,B4,rubida,Unparasitised,FALSE,Core
+5508,Paluma,P070,short,B1,bipectinata,Unparasitised,FALSE,Core
+5509,Paluma,P070,short,B1,bipectinata,Chalcidoidea sp. 1,TRUE,Core
+5510,Paluma,P070,short,B1,bipectinata,Leptopilina sp. 1,TRUE,Core
+5514,Paluma,P070,short,B5,pseudoananassae,Asobara sp. 2,TRUE,Core
+5516,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+5519,Paluma,P070,short,B5,pseudoananassae,Unparasitised,TRUE,Core
+5530,Kirrama,K070,long,B6,rubida,Unparasitised,FALSE,Core
+5532,Kirrama,K070,long,B6,NA,Unparasitised,FALSE,Core
+5533,Kirrama,K070,long,B6,NA,Asobara sp. 1,TRUE,Core
+5540,Kirrama,K730,medium,B7,palidifrons,Unparasitised,FALSE,Core
+5552,Kirrama,K730,long,B4,pseudoananassae,Unparasitised,FALSE,Core
+5594,Kirrama,K730,medium,B15,NA,Unparasitised,FALSE,Core
+5600,Kirrama,K730,medium,B15,palidifrons,Unparasitised,TRUE,Core
+5630,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+5635,Paluma,P070,long,B4,sulfurigaster,Leptopilina sp. 1,TRUE,Core
+5636,Paluma,P070,long,B4,sulfurigaster,Leptopilina sp. 1,TRUE,Core
+5637,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+5638,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+5641,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+5642,Paluma,P070,long,B8,palidifrons,Unparasitised,FALSE,Core
+5646,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+5647,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+5649,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+5730,Kirrama,K390,medium,B9,NA,Unparasitised,FALSE,Core
+5731,Kirrama,K390,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+5739,Kirrama,K390,medium,B1,pseudoananassae,Unparasitised,TRUE,Core
+5769,Kirrama,K390,medium,B11,palidifrons,Unparasitised,FALSE,Core
+5771,Kirrama,K390,long,B14,NA,Unparasitised,FALSE,Core
+5777,Kirrama,K390,long,B14,NA,Unparasitised,FALSE,Core
+5785,Kirrama,K390,long,B8,NA,Unparasitised,FALSE,Core
+5792,Kirrama,K390,medium,B13,NA,Unparasitised,FALSE,Core
+6034,Kirrama,K070,medium,B7,NA,Unparasitised,FALSE,Core
+6038,Kirrama,K070,medium,B7,rubida,Unparasitised,FALSE,Core
+6041,Kirrama,K070,medium,B7,pseudoananassae,Unparasitised,FALSE,Core
+6059,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+6061,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+6062,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+6064,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+6074,Kirrama,K070,medium,B11,bipectinata,Unparasitised,FALSE,Core
+6075,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+6080,Kirrama,K070,medium,B11,NA,Unparasitised,FALSE,Core
+6081,Kirrama,K070,medium,B11,rubida,Unparasitised,FALSE,Core
+6098,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+6099,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+6102,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+6103,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+6105,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+6363,Paluma,P880,medium,B13,palidifrons,Leptopilina sp. 1,TRUE,Core
+6364,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+6365,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+6367,Paluma,P880,medium,B13,NA,Unparasitised,TRUE,Core
+6368,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,TRUE,Core
+6369,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+6370,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+6372,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+6374,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+6375,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+6376,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+6377,Paluma,P880,long,B12,immigrans,Unparasitised,FALSE,Core
+6395,Paluma,P880,medium,B11,rubida,Unparasitised,FALSE,Core
+6397,Paluma,P880,medium,B11,NA,Unparasitised,FALSE,Core
+6642,Paluma,P350,long,B6,rubida,Asobara sp. 1,TRUE,Core
+6648,Paluma,P350,long,B6,NA,Asobara sp. 1,TRUE,Core
+6649,Paluma,P350,long,B6,rubida,Unparasitised,FALSE,Core
+6655,Paluma,P350,long,B10,rubida,Asobara sp. 2,TRUE,Core
+6659,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+6666,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+6667,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+6668,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+6670,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+6676,Paluma,P350,medium,B3,pseudoananassae,Unparasitised,FALSE,Core
+6677,Paluma,P350,medium,B3,birchii,Unparasitised,FALSE,Core
+6680,Paluma,P350,medium,B3,pandora,Unparasitised,FALSE,Core
+6684,Paluma,P350,long,B2,rubida,Unparasitised,FALSE,Core
+6688,Paluma,P350,long,B2,NA,Unparasitised,FALSE,Core
+6689,Paluma,P350,long,B2,NA,Unparasitised,FALSE,Core
+6692,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+6694,Paluma,P350,medium,B15,palidifrons,Unparasitised,FALSE,Core
+6695,Paluma,P350,medium,B15,Drosophila sp. 1,Unparasitised,FALSE,Core
+6697,Paluma,P350,medium,B15,NA,Diapriidae sp. 1,TRUE,Core
+6763,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+6765,Paluma,P350,short,B9,NA,Unparasitised,FALSE,Core
+6766,Paluma,P350,short,B9,birchii,Diapriidae sp. 1,TRUE,Core
+6767,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+6771,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+6772,Paluma,P350,short,B15,rubida,Asobara sp. 2,TRUE,Core
+6773,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+6777,Paluma,P350,short,B15,NA,Unparasitised,FALSE,Core
+6787,Paluma,P350,short,B1,rubida,Unparasitised,FALSE,Core
+6790,Paluma,P350,short,B1,Drosophila sp. 1,Unparasitised,FALSE,Core
+6791,Paluma,P350,short,B1,rubida,Asobara sp. 1,TRUE,Core
+6859,Kirrama,K390,short,B13,NA,Unparasitised,FALSE,Core
+6862,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+6864,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+6875,Kirrama,K390,short,B9,rubida,Unparasitised,FALSE,Core
+6930,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+6933,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+6935,Kirrama,K070,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+6937,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+6955,Kirrama,K390,short,B15,rubida,Unparasitised,FALSE,Core
+6960,Kirrama,K390,short,B15,rubida,Unparasitised,FALSE,Core
+6961,Kirrama,K390,short,B15,NA,Unparasitised,FALSE,Core
+7082,Kirrama,K730,short,B13,palidifrons,Unparasitised,FALSE,Core
+7083,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+7085,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+7089,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+7110,Kirrama,K730,short,B3,rubida,Pteromalidae sp. 1,TRUE,Core
+7111,Kirrama,K730,short,B3,NA,Unparasitised,FALSE,Core
+7114,Kirrama,K730,short,B11,palidifrons,Unparasitised,FALSE,Core
+7116,Kirrama,K730,short,B11,palidifrons,Unparasitised,FALSE,Core
+7797,Kirrama,K730,long,B16,rubida,Unparasitised,FALSE,Core
+7798,Kirrama,K730,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+7874,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+7876,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+7877,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+7879,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+7880,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+7884,Paluma,P880,short,B11,NA,Unparasitised,FALSE,Core
+7890,Paluma,P880,short,B1,pseudotakahashii,Unparasitised,FALSE,Core
+7893,Paluma,P880,short,B1,NA,Unparasitised,FALSE,Core
+7898,Paluma,P880,short,B9,palidifrons,Unparasitised,FALSE,Core
+7901,Paluma,P880,short,B9,NA,Unparasitised,FALSE,Core
+7902,Paluma,P880,short,B9,palidifrons,Unparasitised,FALSE,Core
+7910,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+7911,Paluma,P880,short,B5,NA,Unparasitised,TRUE,Core
+7931,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+7935,Kirrama,K070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+7937,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+8087,Paluma,P880,long,B8,rubida,Unparasitised,FALSE,Core
+8093,Paluma,P880,long,B4,rubida,Leptolamina sp. 1,TRUE,Core
+8095,Paluma,P880,long,B4,rubida,Unparasitised,FALSE,Core
+8097,Paluma,P880,long,B4,palidifrons,Leptopilina sp. 1,TRUE,Core
+8124,Paluma,P070,short,B5,NA,Unparasitised,FALSE,Core
+8125,Paluma,P070,short,B5,pseudoananassae,Unparasitised,FALSE,Core
+8126,Paluma,P070,short,B5,pseudoananassae,Unparasitised,FALSE,Core
+8127,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+8132,Kirrama,K070,medium,B1,bipectinata,Unparasitised,FALSE,Core
+8139,Kirrama,K070,long,B14,NA,Unparasitised,FALSE,Core
+8150,Kirrama,K730,medium,B7,pseudoananassae,Unparasitised,FALSE,Core
+8151,Kirrama,K730,medium,B7,bipectinata,Unparasitised,FALSE,Core
+8154,Kirrama,K730,long,B4,palidifrons,Unparasitised,FALSE,Core
+8159,Kirrama,K730,long,B4,palidifrons,Unparasitised,FALSE,Core
+8231,Kirrama,K730,medium,B13,NA,Unparasitised,FALSE,Core
+8234,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+8236,Paluma,P070,long,B2,palidifrons,Chalcidoidea sp. 1,TRUE,Core
+8241,Paluma,P070,long,B2,NA,Leptopilina sp. 1,TRUE,Core
+8242,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+8244,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+8245,Paluma,P070,long,B4,NA,Unparasitised,FALSE,Core
+8246,Paluma,P070,long,B4,bipectinata,Leptopilina sp. 1,TRUE,Core
+8248,Paluma,P070,long,B4,rubida,Leptopilina sp. 1,TRUE,Core
+8250,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+8251,Paluma,P070,long,B8,palidifrons,Unparasitised,FALSE,Core
+8254,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+8255,Paluma,P070,long,B8,NA,Leptopilina sp. 1,TRUE,Core
+8256,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+8257,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+8342,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+8348,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+8349,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+8350,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+8375,Kirrama,K390,medium,B11,NA,Unparasitised,FALSE,Core
+8387,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+8395,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+8396,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+8647,Kirrama,K070,medium,B7,NA,Unparasitised,FALSE,Core
+8648,Kirrama,K070,medium,B7,bipectinata,Unparasitised,FALSE,Core
+8667,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+8668,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+8669,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+8670,Kirrama,K070,medium,B5,rubida,Unparasitised,FALSE,Core
+8671,Kirrama,K070,medium,B5,bipectinata,Unparasitised,FALSE,Core
+8672,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+8682,Kirrama,K070,medium,B11,bipectinata,Unparasitised,FALSE,Core
+8684,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+8686,Kirrama,K070,medium,B11,palidifrons,Unparasitised,FALSE,Core
+8689,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+8706,Paluma,P070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+8707,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+8710,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+8711,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+8712,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+8713,Paluma,P070,short,B15,pseudoananassae,Unparasitised,FALSE,Core
+8970,Paluma,P880,medium,B13,NA,Unparasitised,FALSE,Core
+8971,Paluma,P880,medium,B13,NA,Unparasitised,FALSE,Core
+8973,Paluma,P880,medium,B13,NA,Unparasitised,FALSE,Core
+8974,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+8975,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+8976,Paluma,P880,medium,B13,NA,Unparasitised,FALSE,Core
+8977,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+8983,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+8985,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+9004,Paluma,P880,medium,B11,palidifrons,Unparasitised,FALSE,Core
+9007,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+9008,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+9253,Paluma,P350,long,B6,NA,Asobara sp. 1,TRUE,Core
+9255,Paluma,P350,long,B6,rubida,Leptolamina sp. 1,TRUE,Core
+9275,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+9277,Paluma,P350,medium,B15,pseudoananassae,Unparasitised,FALSE,Core
+9279,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+9282,Paluma,P350,medium,B3,pseudoananassae,Unparasitised,FALSE,Core
+9285,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+9287,Paluma,P350,medium,B3,birchii,Unparasitised,FALSE,Core
+9288,Paluma,P350,medium,B3,pseudoananassae,Unparasitised,FALSE,Core
+9289,Paluma,P350,medium,B3,pandora,Unparasitised,FALSE,Core
+9291,Paluma,P350,long,B2,NA,Unparasitised,FALSE,Core
+9372,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+9377,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+9378,Paluma,P350,short,B15,palidifrons,Leptolamina sp. 1,TRUE,Core
+9383,Paluma,P350,short,B15,NA,Unparasitised,FALSE,Core
+9386,Paluma,P350,short,B3,rubida,Leptopilina sp. 2,TRUE,Core
+9389,Paluma,P350,short,B3,rubida,Braconidae sp. 1,TRUE,Core
+9393,Paluma,P350,short,B3,rubida,Braconidae sp. 1,TRUE,Core
+9394,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+9395,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+9396,Paluma,P350,short,B11,rubida,Asobara sp. 1,TRUE,Core
+9467,Kirrama,K390,short,B13,NA,Unparasitised,FALSE,Core
+9468,Kirrama,K390,short,B13,birchii,Unparasitised,FALSE,Core
+9470,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+9472,Kirrama,K390,short,B13,birchii,Unparasitised,FALSE,Core
+9540,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+9541,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+9542,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+9544,Kirrama,K070,short,B1,sulfurigaster,Unparasitised,FALSE,Core
+9545,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+9555,Kirrama,K390,short,B11,NA,Unparasitised,FALSE,Core
+9567,Kirrama,K390,short,B15,rubida,Unparasitised,FALSE,Core
+9693,Kirrama,K730,short,B13,NA,Unparasitised,FALSE,Core
+9695,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+9696,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+9715,Kirrama,K730,short,B3,birchii,Unparasitised,FALSE,Core
+9717,Kirrama,K730,short,B3,pseudotakahashii,Ganaspis sp. 1,TRUE,Core
+9718,Kirrama,K730,short,B3,NA,Unparasitised,FALSE,Core
+9719,Kirrama,K730,short,B3,rubida,Unparasitised,FALSE,Core
+9728,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+10403,Kirrama,K730,long,B16,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+10407,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+10414,Kirrama,K730,long,B10,NA,Unparasitised,FALSE,Core
+10483,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+10484,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+10485,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+10487,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+10488,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+10496,Paluma,P880,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+10520,Paluma,P880,short,B5,palidifrons,Unparasitised,FALSE,Core
+10521,Paluma,P880,short,B5,rubida,Unparasitised,FALSE,Core
+10539,Kirrama,K070,short,B15,rubida,Asobara sp. 1,TRUE,Core
+10543,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+10544,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+10695,Paluma,P880,long,B8,pseudotakahashii,Ganaspis sp. 1,TRUE,Core
+10697,Paluma,P880,long,B8,immigrans,Unparasitised,FALSE,Core
+10700,Paluma,P880,long,B4,palidifrons,Unparasitised,FALSE,Core
+10704,Paluma,P880,long,B4,rubida,Unparasitised,FALSE,Core
+10709,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+10711,Paluma,P880,medium,B5,birchii,Unparasitised,FALSE,Core
+10712,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+10713,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,TRUE,Core
+10728,Paluma,P070,short,B13,NA,Unparasitised,FALSE,Core
+10730,Paluma,P070,short,B5,pseudoananassae,Diapriidae sp. 3,TRUE,Core
+10733,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+10735,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+10737,Paluma,P070,short,B5,NA,Unparasitised,FALSE,Core
+10744,Kirrama,K070,medium,B1,NA,Unparasitised,FALSE,Core
+10746,Kirrama,K070,long,B14,rubida,Leptopilina sp. 1,TRUE,Core
+10747,Kirrama,K070,long,B14,NA,Unparasitised,TRUE,Core
+10750,Kirrama,K070,long,B14,rubida,Unparasitised,FALSE,Core
+10756,Kirrama,K730,medium,B7,NA,Unparasitised,FALSE,Core
+10764,Kirrama,K730,long,B4,NA,Unparasitised,FALSE,Core
+10812,Kirrama,K730,medium,B15,NA,Unparasitised,FALSE,Core
+10832,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+10840,Kirrama,K730,medium,B13,birchii,Unparasitised,TRUE,Core
+10843,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+10844,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+10845,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+10847,Paluma,P070,long,B2,rubida,Unparasitised,FALSE,Core
+10850,Paluma,P070,long,B4,palidifrons,Leptopilina sp. 1,TRUE,Core
+10851,Paluma,P070,long,B4,NA,Leptopilina sp. 1,TRUE,Core
+10861,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+10862,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+10863,Paluma,P070,long,B8,rubida,Leptopilina sp. 1,TRUE,Core
+10864,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+10865,Paluma,P070,long,B8,palidifrons,Leptopilina sp. 1,TRUE,Core
+10949,Kirrama,K390,medium,B5,NA,Unparasitised,FALSE,Core
+10957,Kirrama,K390,medium,B11,bipectinata,Unparasitised,FALSE,Core
+10960,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+10961,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+10971,Kirrama,K390,long,B16,NA,Unparasitised,FALSE,Core
+10981,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+10982,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+10991,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+10994,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+10997,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+11002,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+11008,Kirrama,K390,medium,B13,NA,Unparasitised,FALSE,Core
+11009,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+11250,Kirrama,K070,medium,B7,pseudoananassae,Unparasitised,FALSE,Core
+11256,Kirrama,K070,medium,B7,pandora,Unparasitised,FALSE,Core
+11275,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+11278,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+11290,Kirrama,K070,medium,B11,NA,Unparasitised,FALSE,Core
+11295,Kirrama,K070,medium,B11,pandora,Unparasitised,FALSE,Core
+11297,Kirrama,K070,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+11316,Paluma,P070,short,B15,bunnanda,Unparasitised,FALSE,Core
+11317,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+11321,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+11578,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+11579,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+11580,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+11582,Paluma,P880,medium,B13,pseudotakahashii,Unparasitised,FALSE,Core
+11583,Paluma,P880,medium,B13,palidifrons,Unparasitised,FALSE,Core
+11587,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+11589,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+11590,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+11593,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+11612,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+11616,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+11617,Paluma,P880,medium,B11,NA,Unparasitised,FALSE,Core
+11858,Paluma,P350,long,B6,rubida,Leptolamina sp. 1,TRUE,Core
+11859,Paluma,P350,long,B6,rubida,Unparasitised,FALSE,Core
+11867,Paluma,P350,long,B10,NA,Asobara sp. 2,TRUE,Core
+11878,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+11884,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+11885,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+11886,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+11896,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+11898,Paluma,P350,long,B8,NA,Asobara sp. 2,TRUE,Core
+11906,Paluma,P350,medium,B15,palidifrons,Unparasitised,FALSE,Core
+11912,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+11982,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+11985,Paluma,P350,short,B9,palidifrons,Asobara sp. 1,TRUE,Core
+11986,Paluma,P350,short,B15,rubida,Leptolamina sp. 1,TRUE,Core
+11991,Paluma,P350,short,B15,rubida,Unparasitised,TRUE,Core
+11993,Paluma,P350,short,B15,rubida,Unidentified,TRUE,Core
+11995,Paluma,P350,short,B3,rubida,Asobara sp. 1,TRUE,Core
+11996,Paluma,P350,short,B3,rubida,Leptolamina sp. 1,TRUE,Core
+11998,Paluma,P350,short,B3,NA,Asobara sp. 1,TRUE,Core
+12009,Paluma,P350,short,B11,NA,Unparasitised,TRUE,Core
+12076,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+12077,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+12078,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+12080,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+12090,Kirrama,K390,short,B9,NA,Unparasitised,FALSE,Core
+12093,Kirrama,K390,short,B9,NA,Unparasitised,FALSE,Core
+12094,Kirrama,K390,short,B9,NA,Unparasitised,FALSE,Core
+12147,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+12150,Kirrama,K070,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+12151,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+12152,Kirrama,K070,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+12153,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+12163,Kirrama,K390,short,B11,pseudoananassae,Unparasitised,FALSE,Core
+12168,Kirrama,K390,short,B11,palidifrons,Unparasitised,FALSE,Core
+12174,Kirrama,K390,short,B15,palidifrons,Unparasitised,FALSE,Core
+12301,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+12303,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+12322,Kirrama,K730,short,B3,rubida,Unparasitised,TRUE,Core
+12333,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+12334,Kirrama,K730,short,B11,palidifrons,Unparasitised,FALSE,Core
+13092,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+13093,Paluma,P880,short,B15,palidifrons,Leptopilina sp. 1,TRUE,Core
+13094,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+13096,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+13097,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+13098,Paluma,P880,short,B11,NA,Unparasitised,FALSE,Core
+13116,Paluma,P880,short,B9,immigrans,Unparasitised,FALSE,Core
+13117,Paluma,P880,short,B9,birchii,Leptopilina sp. 1,TRUE,Core
+13133,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+13134,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+13136,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+13137,Kirrama,K070,short,B13,rubida,Leptolamina sp. 1,TRUE,Core
+13147,Kirrama,K070,short,B15,rubida,Unparasitised,FALSE,Core
+13148,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+13306,Paluma,P880,long,B4,pseudotakahashii,Unparasitised,FALSE,Core
+13307,Paluma,P880,long,B4,rubida,Leptolamina sp. 1,TRUE,Core
+13308,Paluma,P880,long,B4,rubida,Leptolamina sp. 1,TRUE,Core
+13311,Paluma,P880,long,B4,NA,Unparasitised,FALSE,Core
+13316,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+13319,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+13331,Paluma,P070,short,B13,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+13338,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+13340,Paluma,P070,short,B5,NA,Diapriidae sp. 3,TRUE,Core
+13341,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+13343,Paluma,P070,short,B5,NA,Unparasitised,FALSE,Core
+13344,Paluma,P070,short,B5,NA,Unparasitised,FALSE,Core
+13346,Kirrama,K070,medium,B1,rubida,Unparasitised,TRUE,Core
+13347,Kirrama,K070,medium,B1,NA,Unparasitised,TRUE,Core
+13352,Kirrama,K070,medium,B1,pandora,Leptopilina sp. 1,TRUE,Core
+13354,Kirrama,K070,long,B14,NA,Unparasitised,FALSE,Core
+13360,Kirrama,K070,long,B14,NA,Unparasitised,FALSE,Core
+13434,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,TRUE,Core
+13440,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+13445,Kirrama,K730,medium,B13,NA,Unparasitised,FALSE,Core
+13452,Paluma,P070,long,B2,rubida,Unparasitised,FALSE,Core
+13454,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+13455,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+13456,Paluma,P070,long,B2,NA,Unparasitised,FALSE,Core
+13467,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+13468,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+13469,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+13470,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+13471,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+13562,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+13565,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+13568,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+13580,Kirrama,K390,long,B16,pseudoananassae,Leptolamina sp. 1,TRUE,Core
+13583,Kirrama,K390,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+13584,Kirrama,K390,long,B16,palidifrons,Unparasitised,FALSE,Core
+13586,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+13592,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+13596,Kirrama,K390,long,B8,palidifrons,Unparasitised,FALSE,Core
+13602,Kirrama,K390,long,B8,bipectinata,Unparasitised,FALSE,Core
+13614,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+13616,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+13887,Kirrama,K070,medium,B5,palidifrons,Unparasitised,FALSE,Core
+13922,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+13927,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+13928,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+14195,Paluma,P880,long,B12,palidifrons,Unparasitised,FALSE,Core
+14198,Paluma,P880,long,B12,pseudoananassae,Unparasitised,FALSE,Core
+14199,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+14467,Paluma,P350,long,B6,NA,Asobara sp. 1,TRUE,Core
+14476,Paluma,P350,long,B10,rubida,Unparasitised,FALSE,Core
+14477,Paluma,P350,long,B10,palidifrons,Unparasitised,FALSE,Core
+14483,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+14484,Paluma,P350,medium,B1,NA,Unparasitised,FALSE,Core
+14485,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+14486,Paluma,P350,medium,B1,rubida,Unparasitised,FALSE,Core
+14492,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+14493,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+14497,Paluma,P350,medium,B15,NA,Unparasitised,FALSE,Core
+14502,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+14503,Paluma,P350,medium,B3,rubida,Unparasitised,FALSE,Core
+14505,Paluma,P350,medium,B3,sulfurigaster,Unparasitised,FALSE,Core
+14518,Paluma,P350,medium,B15,Drosophila sp. 1,Diapriidae sp. 1,TRUE,Core
+14590,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+14591,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+14597,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+14599,Paluma,P350,short,B15,NA,Asobara sp. 1,TRUE,Core
+14602,Paluma,P350,short,B3,rubida,Unparasitised,FALSE,Core
+14609,Paluma,P350,short,B3,rubida,Asobara sp. 1,TRUE,Core
+14611,Paluma,P350,short,B11,rubida,Unparasitised,FALSE,Core
+14616,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+14683,Kirrama,K390,short,B13,NA,Unparasitised,FALSE,Core
+14684,Kirrama,K390,short,B13,birchii,Unparasitised,FALSE,Core
+14686,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+14687,Kirrama,K390,short,B13,birchii,Unparasitised,FALSE,Core
+14696,Kirrama,K390,short,B1,palidifrons,Unparasitised,FALSE,Core
+14697,Kirrama,K390,short,B1,rubida,Unparasitised,FALSE,Core
+14704,Kirrama,K390,short,B9,NA,Unparasitised,FALSE,Core
+14754,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+14756,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+14759,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+14771,Kirrama,K390,short,B11,palidifrons,Unparasitised,FALSE,Core
+14772,Kirrama,K390,short,B11,palidifrons,Unparasitised,FALSE,Core
+14781,Kirrama,K390,short,B15,palidifrons,Unparasitised,FALSE,Core
+14909,Kirrama,K730,short,B13,palidifrons,Unparasitised,FALSE,Core
+14911,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+14912,Kirrama,K730,short,B13,palidifrons,Pteromalidae sp. 1,TRUE,Core
+14930,Kirrama,K730,short,B3,rubida,Pteromalidae sp. 1,TRUE,Core
+14931,Kirrama,K730,short,B3,rubida,Pteromalidae sp. 1,TRUE,Core
+14934,Kirrama,K730,short,B3,rubida,Leptopilina sp. 1,TRUE,Core
+15616,Kirrama,K730,long,B8,pseudotakahashii,Unparasitised,FALSE,Core
+15625,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+15699,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+15701,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+15732,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+15739,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+15740,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+15741,Kirrama,K070,short,B13,rubida,Leptolamina sp. 1,TRUE,Core
+15742,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+15754,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+15759,Kirrama,K070,short,B15,NA,Unparasitised,FALSE,Core
+15922,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+15924,Paluma,P880,medium,B5,sulfurigaster,Unparasitised,FALSE,Core
+15925,Paluma,P880,medium,B5,palidifrons,Unparasitised,FALSE,Core
+15926,Paluma,P880,medium,B5,NA,Unparasitised,TRUE,Core
+15927,Paluma,P880,medium,B5,birchii,Unparasitised,TRUE,Core
+15928,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+15929,Paluma,P880,medium,B5,pseudotakahashii,Unparasitised,FALSE,Core
+15939,Paluma,P070,short,B13,bunnanda,Unparasitised,FALSE,Core
+15940,Paluma,P070,short,B13,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+15942,Paluma,P070,short,B13,birchii,Unparasitised,FALSE,Core
+15944,Paluma,P070,short,B13,pseudoananassae,Unparasitised,FALSE,Core
+15954,Kirrama,K070,medium,B1,bipectinata,Unparasitised,FALSE,Core
+15962,Kirrama,K070,long,B14,pseudoananassae,Unparasitised,FALSE,Core
+16042,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+16045,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+16049,Kirrama,K730,medium,B9,pseudoananassae,Unparasitised,FALSE,Core
+16074,Paluma,P070,long,B8,rubida,Unparasitised,FALSE,Core
+16075,Paluma,P070,long,B8,palidifrons,Unparasitised,FALSE,Core
+16076,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+16079,Paluma,P070,long,B8,NA,Unparasitised,TRUE,Core
+16080,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+16166,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+16171,Kirrama,K390,medium,B11,NA,Unparasitised,FALSE,Core
+16175,Kirrama,K390,medium,B11,NA,Unparasitised,FALSE,Core
+16176,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+16186,Kirrama,K390,long,B16,birchii,Unparasitised,FALSE,Core
+16193,Kirrama,K390,long,B16,palidifrons,Unparasitised,FALSE,Core
+16217,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+16223,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+16490,Kirrama,K070,medium,B5,rubida,Unparasitised,FALSE,Core
+16492,Kirrama,K070,medium,B5,bunnanda,Unparasitised,TRUE,Core
+16493,Kirrama,K070,medium,B5,palidifrons,Unparasitised,FALSE,Core
+16494,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+16495,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+16533,Paluma,P070,short,B15,palidifrons,Unparasitised,FALSE,Core
+16536,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+16804,Paluma,P880,long,B12,rubida,Asobara sp. 3,TRUE,Core
+16809,Paluma,P880,long,B12,NA,Unparasitised,FALSE,Core
+16829,Paluma,P880,medium,B11,pseudotakahashii,Unparasitised,FALSE,Core
+17086,Paluma,P350,long,B10,NA,Unparasitised,FALSE,Core
+17089,Paluma,P350,long,B10,NA,Asobara sp. 1,TRUE,Core
+17099,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+17102,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+17196,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+17203,Paluma,P350,short,B15,rubida,Asobara sp. 1,TRUE,Core
+17207,Paluma,P350,short,B15,rubida,Braconidae sp. 2,TRUE,Core
+17209,Paluma,P350,short,B15,rubida,Leptolamina sp. 1,TRUE,Core
+17210,Paluma,P350,short,B3,NA,Unparasitised,FALSE,Core
+17212,Paluma,P350,short,B3,pseudoananassae,Unparasitised,FALSE,Core
+17295,Kirrama,K390,short,B13,rubida,Unparasitised,FALSE,Core
+17296,Kirrama,K390,short,B13,NA,Unparasitised,FALSE,Core
+17302,Kirrama,K390,short,B1,birchii,Leptopilina sp. 1,TRUE,Core
+17305,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+17313,Kirrama,K390,short,B9,NA,Asobara sp. 1,TRUE,Core
+17365,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+17367,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+17369,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+17392,Kirrama,K390,short,B15,rubida,Unparasitised,FALSE,Core
+17514,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+17517,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+17518,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+17542,Kirrama,K730,short,B3,rubida,Unparasitised,FALSE,Core
+17543,Kirrama,K730,short,B3,NA,Unparasitised,FALSE,Core
+17544,Kirrama,K730,short,B3,rubida,Unparasitised,FALSE,Core
+17549,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+18221,Kirrama,K730,long,B8,NA,Unparasitised,TRUE,Core
+18222,Kirrama,K730,long,B8,palidifrons,Leptopilina sp. 3,TRUE,Core
+18224,Kirrama,K730,long,B8,NA,Unparasitised,FALSE,Core
+18229,Kirrama,K730,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+18307,Paluma,P880,short,B15,NA,Unparasitised,FALSE,Core
+18309,Paluma,P880,short,B15,palidifrons,Unparasitised,FALSE,Core
+18310,Paluma,P880,short,B15,rubida,Unparasitised,FALSE,Core
+18338,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+18341,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+18347,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+18349,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+18350,Kirrama,K070,short,B13,rubida,Leptolamina sp. 1,TRUE,Core
+18351,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+18352,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+18353,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+18554,Paluma,P070,short,B5,bipectinata,Unparasitised,FALSE,Core
+18559,Paluma,P070,short,B5,bipectinata,Unparasitised,FALSE,Core
+18561,Paluma,P070,short,B5,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+18682,Paluma,P070,long,B8,pandora,Leptopilina sp. 1,TRUE,Core
+18688,Paluma,P070,long,B8,NA,Unparasitised,FALSE,Core
+18773,Kirrama,K390,medium,B5,NA,Unparasitised,FALSE,Core
+18774,Kirrama,K390,medium,B5,NA,Unparasitised,FALSE,Core
+18775,Kirrama,K390,medium,B5,NA,Unparasitised,FALSE,Core
+18776,Kirrama,K390,medium,B5,NA,Unparasitised,FALSE,Core
+18802,Kirrama,K390,medium,B11,NA,Unparasitised,FALSE,Core
+18806,Kirrama,K390,medium,B11,rubida,Unparasitised,FALSE,Core
+18823,Kirrama,K390,long,B8,NA,Unparasitised,FALSE,Core
+18829,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+18830,Kirrama,K390,medium,B13,rubida,Unparasitised,FALSE,Core
+19098,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+19100,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+19105,Kirrama,K070,medium,B5,rubida,Unparasitised,FALSE,Core
+19138,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+19139,Paluma,P070,short,B15,bipectinata,Leptopilina sp. 1,TRUE,Core
+19140,Paluma,P070,short,B15,serrata,Unparasitised,FALSE,Core
+19141,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+19143,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+19411,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+19415,Paluma,P880,long,B12,pseudotakahashii,Ganaspis sp. 1,TRUE,Core
+19438,Paluma,P880,medium,B11,palidifrons,Unparasitised,FALSE,Core
+19711,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+19713,Paluma,P350,medium,B15,rubida,Unparasitised,FALSE,Core
+19806,Paluma,P350,short,B9,rubida,Unparasitised,TRUE,Core
+19808,Paluma,P350,short,B9,birchii,Unparasitised,FALSE,Core
+19814,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+19818,Paluma,P350,short,B3,rubida,Unparasitised,FALSE,Core
+19828,Paluma,P350,short,B11,NA,Unparasitised,FALSE,Core
+19830,Paluma,P350,short,B11,NA,Unparasitised,FALSE,Core
+19831,Paluma,P350,short,B11,rubida,Unparasitised,FALSE,Core
+19833,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+19898,Kirrama,K390,short,B1,rubida,Unparasitised,FALSE,Core
+19899,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+19901,Kirrama,K390,short,B1,NA,Unparasitised,FALSE,Core
+19907,Kirrama,K390,short,B1,birchii,Unparasitised,FALSE,Core
+19908,Kirrama,K390,short,B1,rubida,Unparasitised,FALSE,Core
+19970,Kirrama,K070,short,B1,NA,Unparasitised,FALSE,Core
+19974,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+19988,Kirrama,K390,short,B11,rubida,Unparasitised,TRUE,Core
+19995,Kirrama,K390,short,B15,NA,Unparasitised,FALSE,Core
+19996,Kirrama,K390,short,B15,NA,Unparasitised,FALSE,Core
+19998,Kirrama,K390,short,B15,palidifrons,Unparasitised,FALSE,Core
+20000,Kirrama,K390,short,B15,NA,Unparasitised,FALSE,Core
+20128,Kirrama,K730,short,B13,rubida,Unparasitised,FALSE,Core
+20153,Kirrama,K730,short,B3,NA,Unparasitised,FALSE,Core
+20158,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+20827,Kirrama,K730,long,B8,NA,Unparasitised,FALSE,Core
+20828,Kirrama,K730,long,B8,rubida,Unparasitised,FALSE,Core
+20833,Kirrama,K730,long,B8,NA,Unparasitised,FALSE,Core
+20946,Paluma,P880,short,B5,sulfurigaster,Unparasitised,FALSE,Core
+20948,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+20949,Paluma,P880,short,B5,pseudoananassae,Unparasitised,FALSE,Core
+20951,Paluma,P880,short,B5,NA,Unparasitised,FALSE,Core
+20955,Kirrama,K070,short,B13,rubida,Unparasitised,TRUE,Core
+20958,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+20959,Kirrama,K070,short,B13,rubida,Unparasitised,TRUE,Core
+20960,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+20961,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+21167,Paluma,P070,short,B5,bipectinata,Unparasitised,FALSE,Core
+21298,Paluma,P070,long,B16,pseudoananassae,Unparasitised,FALSE,Core
+21301,Paluma,P070,long,B16,pandora,Leptopilina sp. 1,TRUE,Core
+21302,Paluma,P070,long,B16,NA,Unparasitised,TRUE,Core
+21380,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+21391,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+21393,Kirrama,K390,medium,B11,rubida,Unparasitised,FALSE,Core
+21415,Kirrama,K390,medium,B11,NA,Unparasitised,FALSE,Core
+21427,Kirrama,K390,long,B8,bipectinata,Unparasitised,FALSE,Core
+21435,Kirrama,K390,medium,B13,rubida,Unparasitised,TRUE,Core
+21441,Kirrama,K390,medium,B13,rubida,Unparasitised,TRUE,Core
+21706,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+21708,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+21711,Kirrama,K070,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+21713,Kirrama,K070,medium,B5,rubida,Unparasitised,FALSE,Core
+21746,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+21749,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+21752,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+22020,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+22412,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+22415,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+22416,Paluma,P350,short,B9,palidifrons,Ganaspis sp. 1,TRUE,Core
+22426,Paluma,P350,short,B3,NA,Unparasitised,FALSE,Core
+22432,Paluma,P350,short,B3,pseudoananassae,Unparasitised,FALSE,Core
+22437,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+22439,Paluma,P350,short,B11,rubida,Unparasitised,FALSE,Core
+22509,Kirrama,K390,short,B1,rubida,Leptopilina sp. 1,TRUE,Core
+22512,Kirrama,K390,short,B1,palidifrons,Unparasitised,FALSE,Core
+22519,Kirrama,K390,short,B1,NA,Unparasitised,FALSE,Core
+22529,Kirrama,K390,short,B9,birchii,Unparasitised,FALSE,Core
+22581,Kirrama,K070,short,B1,pseudoananassae,Diapriidae sp. 1,TRUE,Core
+22582,Kirrama,K070,short,B1,rubida,Asobara sp. 1,TRUE,Core
+22585,Kirrama,K070,short,B1,rubida,Braconidae sp. 1,TRUE,Core
+22599,Kirrama,K390,short,B11,rubida,Unparasitised,FALSE,Core
+22605,Kirrama,K390,short,B15,palidifrons,Unparasitised,FALSE,Core
+22768,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+23434,Kirrama,K730,long,B8,NA,Unparasitised,FALSE,Core
+23435,Kirrama,K730,long,B8,NA,Unparasitised,TRUE,Core
+23437,Kirrama,K730,long,B8,rubida,Pteromalidae sp. 1,TRUE,Core
+23438,Kirrama,K730,long,B8,rubida,Unparasitised,FALSE,Core
+23439,Kirrama,K730,long,B8,rubida,Unparasitised,TRUE,Core
+23564,Kirrama,K070,short,B13,rubida,Unparasitised,FALSE,Core
+23565,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+23568,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+23867,Kirrama,K730,medium,B9,NA,Unparasitised,FALSE,Core
+23906,Paluma,P070,long,B16,NA,Unparasitised,TRUE,Core
+23907,Paluma,P070,long,B16,rubida,Leptolamina sp. 1,TRUE,Core
+23908,Paluma,P070,long,B16,NA,Unparasitised,TRUE,Core
+23910,Paluma,P070,long,B16,NA,Unparasitised,TRUE,Core
+23913,Paluma,P070,long,B16,NA,Unparasitised,FALSE,Core
+23986,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+23991,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+23996,Kirrama,K390,medium,B11,rubida,Unparasitised,TRUE,Core
+24023,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+24038,Kirrama,K390,long,B8,pseudoananassae,Unparasitised,FALSE,Core
+24040,Kirrama,K390,long,B8,NA,Unparasitised,FALSE,Core
+24045,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+24316,Kirrama,K070,medium,B5,rubida,Unparasitised,FALSE,Core
+24318,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+24319,Kirrama,K070,medium,B5,NA,Unparasitised,FALSE,Core
+24356,Paluma,P070,short,B15,pandora,Leptopilina sp. 1,TRUE,Core
+24357,Paluma,P070,short,B15,bipectinata,Unparasitised,FALSE,Core
+24358,Paluma,P070,short,B15,NA,Unparasitised,FALSE,Core
+24359,Paluma,P070,short,B15,pandora,Unparasitised,FALSE,Core
+24360,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+24361,Paluma,P070,short,B15,pseudoananassae,Leptopilina sp. 1,TRUE,Core
+25021,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+25024,Paluma,P350,short,B9,rubida,Asobara sp. 1,TRUE,Core
+25043,Paluma,P350,short,B11,palidifrons,Asobara sp. 1,TRUE,Core
+25046,Paluma,P350,short,B11,NA,Unparasitised,FALSE,Core
+25048,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+25049,Paluma,P350,short,B11,rubida,Leptolamina sp. 1,TRUE,Core
+25114,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+25186,Kirrama,K070,short,B1,rubida,Asobara sp. 1,TRUE,Core
+25188,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+25189,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+25191,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+25192,Kirrama,K070,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+25204,Kirrama,K390,short,B11,palidifrons,Unparasitised,FALSE,Core
+25349,Kirrama,K730,short,B17,palidifrons,Unparasitised,FALSE,Core
+25350,Kirrama,K730,short,B17,NA,Unparasitised,FALSE,Core
+25363,Kirrama,K730,short,B3,rubida,Leptolamina sp. 1,TRUE,Core
+25367,Kirrama,K730,short,B3,palidifrons,Unparasitised,FALSE,Core
+25375,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+26042,Kirrama,K730,long,B8,NA,Unparasitised,FALSE,Core
+26047,Kirrama,K730,long,B8,rubida,Unparasitised,FALSE,Core
+26170,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+26172,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+26173,Kirrama,K070,short,B13,rubida,Unparasitised,TRUE,Core
+26514,Paluma,P070,long,B16,NA,Unparasitised,FALSE,Core
+26515,Paluma,P070,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+26516,Paluma,P070,long,B16,palidifrons,Unparasitised,FALSE,Core
+26518,Paluma,P070,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+26520,Paluma,P070,long,B16,NA,Unparasitised,FALSE,Core
+26521,Paluma,P070,long,B16,NA,Unparasitised,FALSE,Core
+26599,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+26624,Kirrama,K390,long,B12,rubida,Leptopilina sp. 2,TRUE,Core
+26657,Kirrama,K390,medium,B13,pseudoananassae,Unparasitised,FALSE,Core
+26963,Paluma,P070,short,B15,bunnanda,Unparasitised,FALSE,Core
+27236,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+27238,Paluma,P880,long,B12,rubida,Unparasitised,FALSE,Core
+27633,Paluma,P350,short,B9,rubida,Unparasitised,FALSE,Core
+27634,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+27639,Paluma,P350,short,B15,rubida,Asobara sp. 1,TRUE,Core
+27640,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+27653,Paluma,P350,short,B11,rubida,Unparasitised,FALSE,Core
+27655,Paluma,P350,short,B11,rubida,Unparasitised,FALSE,Core
+27731,Kirrama,K390,short,B1,NA,Unparasitised,FALSE,Core
+27794,Kirrama,K070,short,B1,rubida,Unparasitised,TRUE,Core
+27795,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+27798,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+27799,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+27800,Kirrama,K070,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+27812,Kirrama,K390,short,B11,palidifrons,Unparasitised,FALSE,Core
+27813,Kirrama,K390,short,B11,NA,Unparasitised,FALSE,Core
+27954,Kirrama,K730,short,B17,rubida,Unparasitised,FALSE,Core
+27959,Kirrama,K730,short,B17,rubida,Unparasitised,FALSE,Core
+27972,Kirrama,K730,short,B3,rubida,Leptolamina sp. 1,TRUE,Core
+27980,Kirrama,K730,short,B11,rubida,Unparasitised,FALSE,Core
+27982,Kirrama,K730,short,B11,palidifrons,Leptolamina sp. 1,FALSE,Core
+28778,Kirrama,K070,short,B13,pseudoananassae,Unparasitised,TRUE,Core
+28779,Kirrama,K070,short,B13,pseudoananassae,Unparasitised,FALSE,Core
+28781,Kirrama,K070,short,B13,rubida,Leptolamina sp. 1,FALSE,Core
+28783,Kirrama,K070,short,B13,NA,Unparasitised,FALSE,Core
+28785,Kirrama,K070,short,B13,rubida,Unparasitised,TRUE,Core
+29122,Paluma,P070,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+29123,Paluma,P070,long,B16,rubida,Unparasitised,FALSE,Core
+29124,Paluma,P070,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+29125,Paluma,P070,long,B16,NA,Unparasitised,FALSE,Core
+29127,Paluma,P070,long,B16,NA,Leptopilina sp. 1,TRUE,Core
+29202,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+29204,Kirrama,K390,medium,B5,pseudoananassae,Unparasitised,FALSE,Core
+29214,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+29229,Kirrama,K390,long,B12,rubida,Leptopilina sp. 2,TRUE,Core
+29230,Kirrama,K390,long,B12,palidifrons,Leptopilina sp. 2,TRUE,Core
+29236,Kirrama,K390,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+29572,Paluma,P070,short,B15,bunnanda,Unparasitised,FALSE,Core
+30234,Paluma,P350,short,B9,NA,Unparasitised,FALSE,Core
+30238,Paluma,P350,short,B9,palidifrons,Unparasitised,TRUE,Core
+30239,Paluma,P350,short,B9,rubida,Diapriidae sp. 1,TRUE,Core
+30240,Paluma,P350,short,B9,rubida,Unparasitised,TRUE,Core
+30241,Paluma,P350,short,B9,rubida,Asobara sp. 1,TRUE,Core
+30246,Paluma,P350,short,B15,rubida,Unparasitised,FALSE,Core
+30332,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+30337,Kirrama,K390,short,B1,rubida,Unparasitised,FALSE,Core
+30341,Kirrama,K390,short,B1,NA,Unparasitised,FALSE,Core
+30343,Kirrama,K390,short,B1,birchii,Unparasitised,FALSE,Core
+30344,Kirrama,K390,short,B1,pseudoananassae,Unparasitised,FALSE,Core
+30403,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+30405,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+30409,Kirrama,K070,short,B1,rubida,Unparasitised,FALSE,Core
+30586,Kirrama,K730,short,B11,NA,Unparasitised,FALSE,Core
+31260,Kirrama,K730,long,B8,palidifrons,Unparasitised,FALSE,Core
+31261,Kirrama,K730,long,B8,sulfurigaster,Unparasitised,FALSE,Core
+31316,Kirrama,K730,short,B9,rubida,Leptolamina sp. 1,TRUE,Core
+31320,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31321,Kirrama,K730,short,B9,rubida,Leptolamina sp. 1,TRUE,Core
+31327,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31339,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31345,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31349,Kirrama,K730,short,B9,palidifrons,Unparasitised,FALSE,Core
+31350,Kirrama,K730,short,B9,palidifrons,Unparasitised,FALSE,Core
+31352,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31363,Kirrama,K730,short,B9,palidifrons,Unparasitised,FALSE,Core
+31366,Kirrama,K730,short,B9,NA,Unparasitised,FALSE,Core
+31369,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31383,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31385,Kirrama,K730,short,B9,palidifrons,Unparasitised,FALSE,Core
+31386,Kirrama,K730,short,B9,rubida,Unparasitised,FALSE,Core
+31387,Kirrama,K730,short,B9,pseudotakahashii,Unparasitised,FALSE,Core
+31400,Kirrama,K730,short,B5,palidifrons,Unparasitised,FALSE,Core
+31410,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31411,Kirrama,K730,short,B5,rubida,Diapriidae sp. 1,TRUE,Core
+31414,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31415,Kirrama,K730,short,B5,rubida,Leptopilina sp. 3,TRUE,Core
+31416,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31419,Kirrama,K730,short,B5,NA,Unparasitised,TRUE,Core
+31421,Kirrama,K730,short,B5,rubida,Unparasitised,FALSE,Core
+31428,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31447,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31452,Kirrama,K730,short,B5,NA,Unparasitised,FALSE,Core
+31493,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31497,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31498,Kirrama,K730,short,B7,rubida,Pteromalidae sp. 1,TRUE,Core
+31504,Kirrama,K730,short,B7,palidifrons,Unparasitised,FALSE,Core
+31506,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31508,Kirrama,K730,short,B7,pseudotakahashii,Unparasitised,FALSE,Core
+31512,Kirrama,K730,short,B7,pseudotakahashii,Unparasitised,FALSE,Core
+31513,Kirrama,K730,short,B7,birchii,Unparasitised,TRUE,Core
+31521,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31526,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31538,Kirrama,K730,short,B7,pseudotakahashii,Unparasitised,FALSE,Core
+31539,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31542,Kirrama,K730,short,B7,palidifrons,Unparasitised,FALSE,Core
+31543,Kirrama,K730,short,B7,palidifrons,Unparasitised,FALSE,Core
+31551,Kirrama,K730,short,B7,palidifrons,Unparasitised,FALSE,Core
+31560,Kirrama,K730,short,B7,rubida,Unparasitised,FALSE,Core
+31573,Kirrama,K730,short,B7,NA,Unparasitised,FALSE,Core
+31576,Kirrama,K730,short,B7,rubida,Unparasitised,FALSE,Core
+31583,Kirrama,K730,short,B7,palidifrons,Unparasitised,FALSE,Core
+31586,Kirrama,K730,medium,B11,palidifrons,Unparasitised,FALSE,Core
+31587,Kirrama,K730,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+31602,Kirrama,K730,medium,B11,NA,Unparasitised,FALSE,Core
+31612,Kirrama,K730,medium,B11,pseudoananassae,Unparasitised,FALSE,Core
+31615,Kirrama,K730,medium,B11,NA,Unparasitised,FALSE,Core
