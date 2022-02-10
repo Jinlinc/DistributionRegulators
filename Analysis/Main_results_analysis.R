@@ -289,7 +289,7 @@ swfun.hIndex2 <- function(x){
 }
 ## use the pars.est_ci from the previous tpc analysis for RTmin, RTmax and RTopt
 # need to add a t.tree column to do the phylogenetic analysis
-# pars.est_ci <- read.csv(file.choose()) # code to read previously saved result directly
+pars.est_ci <- read.csv(file.choose())
 RT.traits2 <- pars.est_ci %>% mutate(t.tree = sp.list) %>% filter(sp.list != "melanogaster" & sp.list != "simulans")
 RT.traits2$hIndex <- sapply(as.character(RT.traits2$sp.list), swfun.hIndex2)
 
@@ -340,26 +340,27 @@ cold.data$hIndex <- as.numeric(cold.data$hIndex)
 # loading .tre file from Filton
 t <- read.tree("Data/All taxa_Bayesian.con.tre")
 # prune the tree to just my species
-sp.list.fullname <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.palidifrons", "D.pseudotakahashii")
+sp.list.fullname <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.palidifrons", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
 t$tip.label[match(sp.list.fullname, t$tip.label)] # first check the species overlap
 # palidifrons and pandora are unavailable
-tip.avail <- c("D.bunnanda", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pseudotakahashii")
-t.prune <- keep.tip(t, t$tip.label[match(tip.avail, t$tip.label)])
-plot.phylo(t.prune, use.edge.length = TRUE, show.tip.label = TRUE, show.node.label = TRUE)
-write.tree(t.prune) # this is how the phylogenetic structure is written in text format. Tips and nodes are represented by thier name, the branth distance from this tip/node to the nearest node is indicated by the value after ":"
+tip.avail <- c("D.bunnanda", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
+t.avail <- keep.tip(t, t$tip.label[match(tip.avail, t$tip.label)])
+write.tree(t.avail)# this is how the phylogenetic structure is written in text format. Tips and nodes are represented by thier name, the branth distance from this tip/node to the nearest node is indicated by the value after ":"
 # Therefore, I can copy the above style to incorporate D.palidifrons and D.pandora into the tree
 # It's known that D.palidiforns is sister species with D. sulfurigaster, and D.pandora with D.bipectinata.
 # For simplicity, assume that the newly added tip is halfway along the edge. Then the tree can be written as below:
-my.tree  <- read.tree(text = "(((D.pseudotakahashii:0.132152,(D.bunnanda:0.05867,D.birchii:0.061723)Node11:0.079749)Node10:0.018618,(D.pseudoananassae:0.022019,(D.bipectinata:0.0091415, D.pandora:0.0091415)Node15:0.0091415)Node12:0.130325)Node9:0.105535,(D.rubida:0.104915,(D.sulfurigaster:0.055463, D.palidifrons:0.055463)Node17:0.055463)Node13:0.071313)Node8;")
-plot(my.tree)
+t.all <- read.tree(text = "(((((D.melanogaster:0.023028,D.simulans:0.016768)Node1:0.069284,D.pseudotakahashii:0.070281)Node2:0.061871,
+                   (D.bunnanda:0.05867,D.birchii:0.061723)Node3:0.079749)Node4:0.018618,
+                   (D.pseudoananassae:0.022019,(D.bipectinata:0.0091415,D.pandora:0.0091415)Node5:0.0091415)Node6:0.130325)Node7:0.105535,
+                   (D.rubida:0.104915,(D.sulfurigaster:0.055463,D.palidifrons:0.055463)Node8:0.055463)Node9:0.071313)Node10;")
+## Supplementary Figure 3A - phylogeny of all species
+plot(t.all)
 # the species (tips) that are examnined in the tpc experiment are below:
 tip.tpc <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.sulfurigaster", "D.birchii", "D.palidifrons")
 # prune my.tree accordingly:
-t.tree <- keep.tip(my.tree, my.tree$tip.label[match(tip.tpc, my.tree$tip.label)])
-# only to match the tip name here with the species name in other dataset
-new_tip <- c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons")
-t.tree$tip.label <- new_tip[match(t.tree$tip.label,tip.tpc)]
-is.ultrametric(t.tree)
+t.tree <- keep.tip(t.all, t.all$tip.label[match(tip.tpc, t.all$tip.label)])
+# ultrametric tree - needed to calculate the inverse matrix
+is.ultrametric(t.tree) # not!
 # convert to ultrametric tree - 1
 # t.tree <- phytools::nnls.t.tree(cophenetic(t.tree),t.tree, rooted=TRUE, trace=0)
 # because I can't install phytools in my current R version (it is already up to date), I found the code to manually compute the ultrametric tree by extend method.
@@ -373,8 +374,11 @@ force.ultrametric.extend<-function(tree){
 }
 # convert to ultrametric tree - 2
 t.tree <- force.ultrametric.extend(t.tree)
-# examine the final tree used for the following analysis
+## Supplementary Figure 3B - uphylogeny of the seven species used in thermal traits regression
 plot(t.tree)
+# to match the tip name here with the species name in other datasets
+new_tip <- c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons")
+t.tree$tip.label <- new_tip[match(t.tree$tip.label,tip.tpc)]
 ## create the between-level covariance matrix based on the phylo dataset. VERY USEFUL!!
 inv.phylo <- MCMCglmm::inverseA(t.tree, nodes = "TIPS", scale = TRUE) # inverseA(): Inverse Relatedness Matrix and Phylogenetic Covariance Matrix
 A <- solve(inv.phylo$Ainv)
@@ -690,7 +694,7 @@ plot_grid(p4.1, p4.2,
           ncol = 2, nrow = 1)
 ggsave("physiology_traits.png", width = 6, height = 3)
 
-## Supplementary Figure 5.A - RTopt ~ hIndex
+## Supplementary Figure 6.A - RTopt ~ hIndex
 pars.est_ci %>%
   filter(sp.list != "melanogaster" & sp.list != "simulans") %>%
   ggplot(aes(x = sp.list, y = RTopt.med)) + geom_point(size = 2) + 
@@ -722,7 +726,7 @@ RT.traits$spName <- factor(RT.traits$spName, levels = c("palidifrons", "birchii"
 ## Result-2.thermal performance curves
 ## "There was no general trade-off between cold tolerance (RTmin) versus heat tolerance (RTmax) that correspond to their distribution types (Spearman’s rank correlation rho = -0.6, p value = 0.10). "
 cor.test(pars.est_ci$RTmax.med, pars.est_ci$RTmin.med, method = "spearman")
-## Supplementary Figure 5.B 
+## Supplementary Figure 6.B 
 RT.traits %>% 
   ggplot(aes(x = RTmin, y = RTmax, color = spName)) + 
   geom_point(size = 0.6) + 
@@ -790,7 +794,7 @@ save(fit_cold, file = 'StanFits/fit_6pairs_cold')
 ## Diagnostics of fitting cold treatment data
 # check values and convergence: all but one Rhat = 1.00, satisfying convergence
 print(fit_cold, pars = c('mur', 'A', 'phi', "r1", "r2","r3","r4","r5","sigmar")) 
-## Supplementary figure 4A - distribution of est and obs
+## Supplementary figure 5A - distribution of est and obs
 yrep <- rstan::extract(fit_cold, pars = c("y_sim"), permuted = TRUE)
 yrep <- as.data.frame(yrep); yrep <- as.matrix(yrep)
 yobs <- dat$obs_count  
@@ -843,7 +847,7 @@ save(fit_hot, file = 'StanFits/fit_6pairs_hot')
 # the hot treatment data has some species having very small offspring count (zero or close to zero), which may be the reason for the algorithm to converge.
 # I have no other way to improve convergence, so I will just use this fitted result. 
 print(fit_hot, pars = c('mur', 'A', 'phi', "r1", "r2","r3","r4","r5","sigmar")) 
-## Supplementary figure 4B - distribution of est and obs
+## Supplementary figure 5B - distribution of est and obs
 yrep <- rstan::extract(fit_hot, pars = c("y_sim"), permuted = TRUE)
 yrep <- as.data.frame(yrep); yrep <- as.matrix(yrep)
 yobs <- dat$obs_count  
