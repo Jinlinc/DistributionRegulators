@@ -12,7 +12,7 @@ Owen T. Lewis (Department of Zoology, University of Oxford)
 
 Authors contribution: JC and OTL both contributed to the development of ideas. JC designed and conducted the experimental work. JC analyzed the results and led the writing of the manuscript. OTL contributed to the writing.
 
-Correspondence: Jinlin Chen (jinlinchenn@gmail.com)
+Correspondence: Jinlin Chen (chen.jin.lin@hotmail.com)
 
 
 ## Layout
@@ -33,10 +33,10 @@ All table and figures in the main text and most of supplementary materials gener
  * **`Supp`**: Two tables, eleven figures from SI and one phylogenetic tree file.
 
 ### **`Writing`** 
-The old and current versions of the munuscript and related documents for submission to scientific journals.
+The old and current versions of the munuscript and related documents for submission to scientific journals. The folder is still empty now.
 
 
-## Version controls
+## Version control
 R version 4.0.3 (2020-10-10)
 Platform: x86_64-apple-darwin17.0 (64-bit)
 Running under: macOS Catalina 10.15.7

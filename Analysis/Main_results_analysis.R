@@ -289,6 +289,7 @@ swfun.hIndex2 <- function(x){
 }
 ## use the pars.est_ci from the previous tpc analysis for RTmin, RTmax and RTopt
 # need to add a t.tree column to do the phylogenetic analysis
+# pars.est_ci <- read.csv(file.choose()) # code to read previously saved result directly
 RT.traits2 <- pars.est_ci %>% mutate(t.tree = sp.list) %>% filter(sp.list != "melanogaster" & sp.list != "simulans")
 RT.traits2$hIndex <- sapply(as.character(RT.traits2$sp.list), swfun.hIndex2)
 
@@ -336,20 +337,49 @@ cold.data$hIndex <- as.numeric(cold.data$hIndex)
 
 
 ########################## regression and plot #############################
-## preparing phylogenetic info for phylogenetic regression
-tree <- read.tree(text = "((((pandora,bipectinata),pseudoananassae),((bunnanda, birchii))),(palidifrons, sulfurigaster));")
-plot(tree, type = "cladogram", edge.width = 2)
-## adding artificial branch length and node label
-t.tree <- compute.brlen(tree,method = "Grafen")
-t.tree <- makeNodeLabel(t.tree, method = "number", prefix = "Node")
-t.tree <- di2multi(t.tree)
-#t.tree <- compute.brlen(tree,1) 
-## the quantitative results of phylogenetic signal depends on branch length. Therefore, I should get the most precise as possible - ASK KELLERMAN
+# loading .tre file from Filton
+t <- read.tree("Data/All taxa_Bayesian.con.tre")
+# prune the tree to just my species
+sp.list.fullname <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.palidifrons", "D.pseudotakahashii")
+t$tip.label[match(sp.list.fullname, t$tip.label)] # first check the species overlap
+# palidifrons and pandora are unavailable
+tip.avail <- c("D.bunnanda", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pseudotakahashii")
+t.prune <- keep.tip(t, t$tip.label[match(tip.avail, t$tip.label)])
+plot.phylo(t.prune, use.edge.length = TRUE, show.tip.label = TRUE, show.node.label = TRUE)
+write.tree(t.prune) # this is how the phylogenetic structure is written in text format. Tips and nodes are represented by thier name, the branth distance from this tip/node to the nearest node is indicated by the value after ":"
+# Therefore, I can copy the above style to incorporate D.palidifrons and D.pandora into the tree
+# It's known that D.palidiforns is sister species with D. sulfurigaster, and D.pandora with D.bipectinata.
+# For simplicity, assume that the newly added tip is halfway along the edge. Then the tree can be written as below:
+my.tree  <- read.tree(text = "(((D.pseudotakahashii:0.132152,(D.bunnanda:0.05867,D.birchii:0.061723)Node11:0.079749)Node10:0.018618,(D.pseudoananassae:0.022019,(D.bipectinata:0.0091415, D.pandora:0.0091415)Node15:0.0091415)Node12:0.130325)Node9:0.105535,(D.rubida:0.104915,(D.sulfurigaster:0.055463, D.palidifrons:0.055463)Node17:0.055463)Node13:0.071313)Node8;")
+plot(my.tree)
+# the species (tips) that are examnined in the tpc experiment are below:
+tip.tpc <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.sulfurigaster", "D.birchii", "D.palidifrons")
+# prune my.tree accordingly:
+t.tree <- keep.tip(my.tree, my.tree$tip.label[match(tip.tpc, my.tree$tip.label)])
+# only to match the tip name here with the species name in other dataset
+new_tip <- c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons")
+t.tree$tip.label <- new_tip[match(t.tree$tip.label,tip.tpc)]
+is.ultrametric(t.tree)
+# convert to ultrametric tree - 1
+# t.tree <- phytools::nnls.t.tree(cophenetic(t.tree),t.tree, rooted=TRUE, trace=0)
+# because I can't install phytools in my current R version (it is already up to date), I found the code to manually compute the ultrametric tree by extend method.
+force.ultrametric.extend<-function(tree){
+  h<-diag(vcv(tree))
+  d<-max(h)-h
+  ii<-sapply(1:Ntip(tree),function(x,y) which(y==x),
+             y=tree$edge[,2])
+  tree$edge.length[ii]<-tree$edge.length[ii]+d
+  return(tree)
+}
+# convert to ultrametric tree - 2
+t.tree <- force.ultrametric.extend(t.tree)
+# examine the final tree used for the following analysis
 plot(t.tree)
 ## create the between-level covariance matrix based on the phylo dataset. VERY USEFUL!!
 inv.phylo <- MCMCglmm::inverseA(t.tree, nodes = "TIPS", scale = TRUE) # inverseA(): Inverse Relatedness Matrix and Phylogenetic Covariance Matrix
 A <- solve(inv.phylo$Ainv)
 rownames(A) <- rownames(inv.phylo$Ainv)
+
 
 # RTopt #
 fit.RTopt <- brm(

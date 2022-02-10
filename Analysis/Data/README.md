@@ -40,7 +40,7 @@ This dataset is to analyze the reproductive thermal performance of the Drosophil
 
 ### **`cold_tolerance_data.csv`** 
 This dataset documents the knockdown and recovery time by extreme coldness of the Drosophila species in the laboratory. Resistance to extreme cold temperature was measured as knockdown time for each individual at 5°C and the time for recovery of mobility after a 30-minute exposure to 5°C. Variables were described below:
- * **`treatment`**: the experimental temperature that the flies were exposed to
+ * **`treatment`**: The experimental temperature that the flies were exposed to
  * **`species`**: The name of the species tested  
  * **`distribution`**: The distribution type of the tested species
  * **`gender`**: The gender of the adult flies
@@ -49,12 +49,12 @@ This dataset documents the knockdown and recovery time by extreme coldness of th
  * **`position`**: The position of the tested Drosophila vial on the observation rack (3*3 grid)
  * **`order`**: The order of the 7 tubes in one cell on the observation rack
  * **`rep`**: Replication. 7 replicates per round.
- * **`kd.t`**: knockdown time (min)
- * **`rc.t`**: recovery time (min)
+ * **`kd.t`**: Knockdown time (min)
+ * **`rc.t`**: Recovery time (min)
  
 ### **`hot_tolerance_data.csv`** 
 This dataset documents the knockdown by extreme heat of the Drosophila species in the laboratory. Resistance to extreme cold temperature was measured as knockdown time for each individual at 40°C. Variables were described below:
- * **`treatment`**: the experimental temperature that the flies were exposed to
+ * **`treatment`**: The experimental temperature that the flies were exposed to
  * **`species`**: The name of the species tested  
  * **`distribution`**: The distribution type of the tested species
  * **`gender`**: The gender of the adult flies
@@ -63,7 +63,7 @@ This dataset documents the knockdown by extreme heat of the Drosophila species i
  * **`position`**: The position of the tested Drosophila vial on the observation rack (3*3 grid)
  * **`order`**: The order of the 7 tubes in one cell on the observation rack
  * **`rep`**: Replication. 7 replicates per round.
- * **`kd.t`**: knockdown time (min)
+ * **`kd.t`**: Knockdown time (min)
  
 ### **`sixPairs_cold.csv`** 
 This dataset documents the short-term competition outcome in cold treatment. Specific numbers of one or two Drosophila species were placed in one vial in a experimental temperature. The outcome were measured by the number of offspring of each species. Variables were described below:
