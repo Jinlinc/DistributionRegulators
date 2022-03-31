@@ -20,7 +20,8 @@ library(rstan); options(mc.cores = parallel::detectCores()); rstan_options(auto_
 library(bayesplot) # use its function "ppc_dens_overlay" to do fitting diagnostics 
 library(ape) # to read phylogenetic tree and do relavant stuff
 library(brms) # phylogenetic regression
-
+## directories
+setwd("/Users/jinlink/Github/DistributionRegulators/Analysis") # please modify accordingly
 
 ## 1. distribution and climate
 ########################## climate #############################
