@@ -1,9 +1,9 @@
 # Abiotic and abiotic regulators of species distribution
 
 ## Overview
-This repository provides the data, analysis code for the manuscript "Small differences in upper thermal limits and interspecific competition jointly determine species distributions of rainforest Drosophila"
+This repository provides the data, analysis code for the manuscript "Factors determining distributions of rainforest Drosophila shift from interspecific competition to high temperature with decreasing elevation"
 
-We investigated thermal tolerances and interspecific competition as causes of species turnover in the nine most abundant species of Drosophila along elevational gradients in the Australian Wet Tropics. Specifically, we 1) analyzed the distribution patterns of the studies Drosophila species; 2) fitted thermal performance curves; 3) tested the correlation between multiple thermal traits and distribution patterns; 4) fitted the Beverton-Holt model to decribed the single-generation intra- and inter-specific competition effect; 5) examined the long-term effect of competition and temperature on the population size of a pair of Drosophila species.
+We investigated thermal tolerances and interspecific competition as causes of species turnover in the nine most abundant species of Drosophila along elevational gradients in the Australian Wet Tropics. Specifically, we 1) analyzed the distribution patterns of the studies Drosophila species; 2) fitted thermal performance curves; 3) tested the correlation between multiple thermal traits and distribution patterns; 4) fitted the Beverton-Holt model to describe the single-generation intra- and inter-specific competition effect; 5) examined the long-term effect of competition and temperature on the population size of a pair of Drosophila species.
 
 
 ## Authors information

@@ -4,7 +4,7 @@
 
 ### Content
 ## 0. general preparation
-## 1. distribution
+## 1. distribution and climate
 ## 2. thermal performance curve
 ## 3. regression: thermal traits - distribution 
 ## 4. short-term competition and equilirium states
@@ -22,8 +22,97 @@ library(ape) # to read phylogenetic tree and do relavant stuff
 library(brms) # phylogenetic regression
 
 
-## 1. distribution
-########################## data formating #############################
+## 1. distribution and climate
+########################## climate #############################
+## monthly temperature summary
+climate.dat <- read.csv("Data/longtermClimate_formated.csv")
+summaryC <- climate.dat %>%
+  group_by(Site2016, year_month, day) %>%
+  summarise(Celsius_sd = sd(Celsius), Celsius_m = mean(Celsius), Celsius_max = max(Celsius)) %>% # calculate daily mean and daily maximum
+  group_by(Site2016, year_month) %>% # then calcualte monthly mean of mean temperature and maximum temperature
+  summarise(Celsius_sd = mean(Celsius_sd), Celsius_mean = mean(Celsius_m), Celsius_max_mean = mean(Celsius_max))
+# 2016 - April mean: 23.67969(K70); 24.29557(P70)
+# 2017 - Feb mean: 25.96354(K70); 26.32434(P70)
+# This discrepancy can be explained by different temperature regimes used in our study (corresponding to February temperatures in the field, with an average of 26°C and average daily maximum of 30.6°C at lowland) and by O’Brien et al. (April temperatures, which are around 2°C  lower on average and on average daily maximum). 
+
+## temperature for the survey season
+sim.hot <- data.frame(x1 = "00:00", x2 = "08:00", x3 = "20:00", x4 = "24:00",
+                     y1 = 24, y2 = 28.5)
+sim.cold <- data.frame(x1 = "00:00", x2 = "08:00", x3 = "20:00", x4 = "24:00",
+                     y1 = 21, y2 = 23)
+# plot lowland testing regime
+climate.p1 <- climate.dat %>%
+  filter(Site2016 == "K070" | Site2016 == "P070") %>% 
+  filter(year_month == "2017-02") %>%
+  ggplot(aes(x = justTime, y = Celsius)) +  geom_line(aes(group = day), alpha = 0.4) + 
+  stat_summary(aes(y = Celsius,group=1), fun=mean, colour="blue", geom="line",group=1,size = 1.5) +
+  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y1, colour = "red"), data = sim.hot,size = 1.5) + 
+  geom_segment(aes(x = x2, y = y1, xend = x2, yend = y2, colour = "red"), data = sim.hot,size = 1.5) + 
+  geom_segment(aes(x = x2, y = y2, xend = x3, yend = y2, colour = "red"), data = sim.hot,size = 1.5) + 
+  geom_segment(aes(x = x3, y = y2, xend = x3, yend = y1, colour = "red"), data = sim.hot,size = 1.5) + 
+  geom_segment(aes(x = x3, y = y1, xend = x4, yend = y1, colour = "red"), data = sim.hot,size = 1.5) + 
+  scale_y_continuous(limits = c(17, 40), breaks = seq(17, 40, by = 2)) + ylab("Temperature (degree Celsius)") +
+  scale_x_discrete(breaks = c("00:48", "04:48", "08:48", "12:48", "16:48", "20:48", "23:48")) + xlab("Time of the day") + 
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  facet_grid(year_month~Site2016) + ggtitle("A")
+# plot upland testing regime
+climate.p2 <- climate.dat %>%
+  filter(Site2016 == "K730" | Site2016 == "P780") %>% 
+  filter(year_month == "2017-02") %>%
+  ggplot(aes(x = justTime.c, y = Celsius)) +  geom_line(aes(group = day), alpha = 0.4) + 
+  stat_summary(aes(y = Celsius,group=1), fun=mean, colour="blue", geom="line",group=1,size = 1.5) +
+  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y1, colour = "red"), data = sim.cold,size = 1.5) + 
+  geom_segment(aes(x = x2, y = y1, xend = x2, yend = y2, colour = "red"), data = sim.cold,size = 1.5) + 
+  geom_segment(aes(x = x2, y = y2, xend = x3, yend = y2, colour = "red"), data = sim.cold,size = 1.5) + 
+  geom_segment(aes(x = x3, y = y2, xend = x3, yend = y1, colour = "red"), data = sim.cold,size = 1.5) + 
+  geom_segment(aes(x = x3, y = y1, xend = x4, yend = y1, colour = "red"), data = sim.cold,size = 1.5) + 
+  scale_y_continuous(limits = c(17, 32), breaks = seq(17, 32, by = 1)) + ylab("Temperature (degree Celsius)") +
+  scale_x_discrete(breaks = c("00:15", "04:15", "08:15", "12:15", "16:15", "20:15", "23:15")) + xlab("Time of the day") + 
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  facet_grid(year_month~Site2016) + ggtitle("B")
+## summplementary figure 4 - field and experiment temperature
+plot_grid(climate.p1, climate.p2, ncol = 1, nrow = 2)
+ggsave("FebTemperature.png", width = 6, height = 8)
+
+## daily extreme comparison
+# average daily extreme by month
+extreme.p1 <- summaryC %>%
+  mutate(color = ifelse(Site2016 == "K070"|Site2016 == "P070", "#0066CC", 
+                        ifelse(Site2016 == "K390"|Site2016 == "P350", "#009900", "#FFCC33"))) %>%
+  mutate(linetype = ifelse(Site2016 == "K070"|Site2016 == "K390"|Site2016 == "K730", "solid", "dashed")) %>% 
+  ggplot(aes(x = year_month, y = Celsius_max_mean)) + 
+  geom_line(aes(group = Site2016, color = color, linetype = linetype)) + 
+  geom_abline(intercept = 29, slope = 0, color = "dark red") + 
+  xlab("Year-Month") + ylab("Mean of daily maximum temperature (°C)") + ggtitle("A") + 
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))
+# average duration of hourly temperature exceeding 29C
+summaryD <- climate.dat %>%
+  group_by(Site2016, year_month, day) %>%
+  summarise(duration = matrixStats::count(Celsius >= 29)) %>% # this summarize the number of hours that the temperature exceed 29C for each day
+  group_by(Site2016, year_month) %>%
+  summarise(duration_m = mean(duration)) # this calculate the mean (by month) of hours per day excceeding 29C
+extreme.p2 <- summaryD %>%
+  mutate(color = ifelse(Site2016 == "K070"|Site2016 == "P070", "#0066CC", 
+                        ifelse(Site2016 == "K390"|Site2016 == "P350", "#009900", "#FFCC33"))) %>%
+  mutate(linetype = ifelse(Site2016 == "K070"|Site2016 == "K390"|Site2016 == "K730", "solid", "dashed")) %>% 
+  ggplot(aes(x = year_month, y = duration_m)) + 
+  geom_line(aes(group = Site2016, color = color, linetype = linetype)) + 
+  xlab("Year-Month") + ylab("duration per day that temperautre >= 29°C (h)") + ggtitle("B") + 
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))
+## summplementary figure 7 - summary of temperature extremes on different sites 
+plot_grid(extreme.p1, extreme.p2, ncol = 1, nrow = 2)
+ggsave("climateExtremeSummary.png", width = 6, height = 8)
+
+
+########################## distribution data formating #############################
 distribution.dat <- read.csv("Data/pupaeSamplingCore.csv")
 dist.dat.core <- distribution.dat %>%
   filter(is.na(Host) != TRUE) %>%
@@ -34,8 +123,9 @@ dist.dat.core <- distribution.dat %>%
   mutate(elev.s = ifelse(Site == "K070" | Site == "P070", "Low",
                          ifelse(Site == "K390" | Site == "P350", "Medium", "High"))) %>%
   mutate(hIndex = ifelse(elev.s == "Low", 0,
-                         ifelse(elev.s == "Medium", 0.5, 1)))
-dist.dat.core$Host <- factor(dist.dat.core$Host, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "rubida", "birchii", "palidifrons", "pseudotakahashii"))
+                         ifelse(elev.s == "Medium", 0.5, 1))) %>%
+  mutate(Host = ifelse(Host == "palidifrons", "pallidifrons", Host))  # correct the mis-spealing of the species name
+dist.dat.core$Host <- factor(dist.dat.core$Host, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "rubida", "birchii", "pallidifrons", "pseudotakahashii"))
 dist.dat.core$Site <- factor(dist.dat.core$Site, levels = c("K070", "P070", "P350", "K390", "K730", "P880"))
 dist.dat.core$elev.s <- factor(dist.dat.core$elev.s, levels = c("High", "Medium", "Low"))
 
@@ -54,8 +144,9 @@ host.summary.trans %>%
   geom_text(aes(label = count), position = position_fill(vjust = 0.5), alpha = 0.6, size = 6) +
   ylab("Proportion") + xlab("Drosophila species") +
   facet_grid(Transect ~ .) + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15), axis.text.y = element_text(hjust = 1, size = 15)) + 
-  theme(axis.title.y = element_text(size = 18), axis.title.x = element_text(size = 18)) + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15, face = "italic"), axis.text.y = element_text(hjust = 1, size = 15)) + 
+  theme(axis.title.y = element_text(size = 18), axis.title.x = element_text(size = 18, face = "italic")) + 
+  theme(strip.text.y = element_text(size = 18)) + 
   theme(legend.text=element_text(size=18), legend.title = element_text(size=18), legend.position = "top") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black")) +
@@ -132,7 +223,7 @@ tpc_data %>%
 swfun.sp2 <- function(x){
   switch (x,
           "BIP" = "bipectinata", "bir" = "birchii", "BUN" = "bunnanda",
-          "MEL" = "melanogaster", "PAL" = "palidifrons", "PAN" = "pandora",
+          "MEL" = "melanogaster", "PAL" = "pallidifrons", "PAN" = "pandora",
           "PSA" = "pseudoananassae", "SIM" = "simulans", "SUL" = "sulfurigaster"
   )
 }
@@ -204,7 +295,7 @@ par(mfrow=c(1,1))
 ## extract the model parameters
 ## construct predicted curves 
 ## plot the predicted thermal performance curves of nine species together
-sp.list <- c("bipectinata", "birchii", "bunnanda", "melanogaster", "palidifrons", "pandora", "pseudoananassae", "simulans", "sulfurigaster")
+sp.list <- c("bipectinata", "birchii", "bunnanda", "melanogaster", "pallidifrons", "pandora", "pseudoananassae", "simulans", "sulfurigaster")
 pars <- rstan::extract(fit_tpc_sqrt_varingSD_noBound, pars = c("a","b","RTmax","RTmin", "RTopt"), permuted = TRUE)
 a.med <- apply(pars$a, 2, FUN = median) 
 b.med <- apply(pars$b, 2, FUN = median)
@@ -252,27 +343,39 @@ tpc.pred <- tpc.pred %>%
 cc.tpc <- c("melanogaster" = "grey",
          "simulans" = "#663300", "pandora" = "#FF9933", "bipectinata" = "#FFCC99", "bunnanda" = "#CC6600",
          "pseudoananassae"="#BDE51F", "sulfurigaster" = "#5FCB0B",
-         "palidifrons" = "#004C99", "birchii" = "#025139")
-tpc.pred$spName <- factor(tpc.pred$spName, levels = c("palidifrons", "birchii", "sulfurigaster", "pseudoananassae", "bipectinata", "pandora", "bunnanda", "simulans", "melanogaster"))
+         "pallidifrons" = "#004C99", "birchii" = "#025139")
+tpc.pred$spName <- factor(tpc.pred$spName, levels = c("pallidifrons", "birchii", "sulfurigaster", "pseudoananassae", "bipectinata", "pandora", "bunnanda", "simulans", "melanogaster"))
 tpc.pred %>%
   ggplot(aes(x = temp, y = dailyRS, color = spName)) + geom_path(size = 1) + 
   scale_color_manual(values = cc.tpc, name = "Drosophila species") + 
-  xlim(7,33) + xlab("Temperature") + ylab("Fecundity (per female per day)") + ylim(0,25) + 
+  xlim(7,33) + xlab("Temperature (degree Celsius)") + ylab("Fecundity (per female per day)") + ylim(0,25) + 
   theme(axis.title.y = element_text(size = 18), axis.title.x = element_text(size = 18)) +
   theme(axis.text.y = element_text(size = 15), axis.text.x = element_text(size = 15)) +
-  theme(legend.text=element_text(size=18), legend.title = element_text(size=18)) + 
+  theme(legend.text=element_text(size=18, face = "italic"), legend.title = element_text(size=18, face = "italic")) + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black")) 
 ggsave("tpc.png", width = 10, height = 6)
+
+## Supplementary Figure 1B
+tpc_data %>%
+  filter(period != "recovery" & sp != "MEL") %>%
+  mutate(sp = ifelse(sp == "bir", "BIR", sp)) %>%
+  ggplot(aes(x = period, y = adultF+adultM, group = sp, color = sp)) + 
+  geom_smooth(method = "lm", se = F) + 
+  xlab("Test period") + ylab("Total number of offspring") + 
+  facet_grid(.~temp, switch = "both") + 
+  guides(color=guide_legend(title="Species"))
+ggsave("reproduction trend.png", width = 10, height = 5)
 
 ## Supplementary Figure 2B
 tpc_data_RS %>%
   ggplot(aes(x = temp.corr, y = dailyRS)) + geom_point() + 
   geom_path(data = tpc.pred, aes(x = temp, y = dailyRS, color = "blue")) + scale_color_manual(values = "blue") +  
-  xlim(7,33) + xlab("Temperature") + ylab("Fecundity (per female per day)") + ylim(0,25) + 
+  xlim(7,33) + xlab("Temperature (degree Celsius)") + ylab("Fecundity (per female per day)") + ylim(0,25) + 
   facet_grid(. ~ spName) + 
   theme(axis.title.y = element_text(size = 18), axis.title.x = element_text(size = 18)) +
-  theme(axis.text.y = element_text(size = 15), axis.text.x = element_text(angle = 45, size = 15)) +
+  theme(axis.text.y = element_text(size = 12), axis.text.x = element_text(angle = 45, size = 12)) +
+  theme(strip.text.x = element_text(size = 9, face = "italic")) + 
   theme(legend.position = "none") + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black"))
@@ -283,7 +386,7 @@ ggsave("tpc_summary.png", width = 10, height = 5)
 swfun.hIndex2 <- function(x){
   switch (x,
           "bipectinata" = 0.1176, "birchii" = 0.6400, "bunnanda" = 0,
-          "melanogaster" = NA, "palidifrons" = 0.7629, "pandora" = 0.0714,
+          "melanogaster" = NA, "pallidifrons" = 0.7629, "pandora" = 0.0714,
           "pseudoananassae" = 0.4048, "simulans" = NA, "sulfurigaster" = 0.4286
   )
 }
@@ -307,7 +410,7 @@ tpc_data %>%
   group_by(spName, round, rep, temp, temp.corr) %>%
   summarize(adultT.com = sum(adultT)) %>% 
   mutate(dailyRS = adultT.com/8) -> fec.data # RS is the offspring (male+female) number for 4 days, dailyFec is only measured by female 
-fec.data$spName <- factor(fec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
+fec.data$spName <- factor(fec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
 fec.data$hIndex <- sapply(as.character(fec.data$spName), swfun.hIndex2)
 fec.data$round <- as.factor(fec.data$round)
 ## recovered (day 9-12) daily fecundity ##
@@ -315,7 +418,7 @@ rec.data <- tpc_data %>%
   filter(period == "recovery") %>% 
   mutate(RS = adultF + adultM, dailyRS.rec = (adultF + adultM)/8) %>%  # I haven't correct for the dead flies before recovery
   select(spName, round, rep, temp, temp.corr, RS, dailyRS.rec)
-rec.data$spName <- factor(rec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
+rec.data$spName <- factor(rec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
 rec.data$hIndex <- sapply(as.character(rec.data$spName), swfun.hIndex2)
 rec.data$round <- as.factor(rec.data$round)
 
@@ -324,14 +427,16 @@ rec.data$round <- as.factor(rec.data$round)
 hot.data <- read.csv("Data/hot_tolerance_data.csv")
 hot.data$spName <- sapply(as.character(hot.data$species), swfun.sp2)
 hot.data$hIndex <- sapply(as.character(hot.data$spName), swfun.hIndex2)
-hot.data$spName <- factor(hot.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
+hot.data <- hot.data %>% mutate(spName = ifelse(spName == "palidifrons", "pallidifrons", spName))
+hot.data$spName <- factor(hot.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
 hot.data$kd.t <- as.numeric(hot.data$kd.t)
 hot.data$hIndex <- as.numeric(hot.data$hIndex)
 ## cold knockdown ##
 cold.data <- read.csv("Data/cold_tolerance_data.csv")
 cold.data$spName <- sapply(as.character(cold.data$species), swfun.sp2)
 cold.data$hIndex <- sapply(as.character(cold.data$spName), swfun.hIndex2)
-cold.data$spName <- factor(cold.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
+cold.data <- cold.data %>% mutate(spName = ifelse(spName == "palidifrons", "pallidifrons", spName))
+cold.data$spName <- factor(cold.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
 cold.data$kd.t <- as.numeric(cold.data$kd.t)
 cold.data$hIndex <- as.numeric(cold.data$hIndex)
 
@@ -340,23 +445,23 @@ cold.data$hIndex <- as.numeric(cold.data$hIndex)
 # loading .tre file from Filton
 t <- read.tree("Data/All taxa_Bayesian.con.tre")
 # prune the tree to just my species
-sp.list.fullname <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.palidifrons", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
+sp.list.fullname <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pallidifrons", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
 t$tip.label[match(sp.list.fullname, t$tip.label)] # first check the species overlap
-# palidifrons and pandora are unavailable
-tip.avail <- c("D.bunnanda", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
+# pandora are unavailable
+tip.avail <- c("D.bunnanda", "D.bipectinata", "D.pseudoananassae", "D.rubida", "D.sulfurigaster", "D.birchii", "D.pallidifrons", "D.pseudotakahashii", "D.melanogaster", "D.simulans")
 t.avail <- keep.tip(t, t$tip.label[match(tip.avail, t$tip.label)])
 write.tree(t.avail)# this is how the phylogenetic structure is written in text format. Tips and nodes are represented by thier name, the branth distance from this tip/node to the nearest node is indicated by the value after ":"
-# Therefore, I can copy the above style to incorporate D.palidifrons and D.pandora into the tree
-# It's known that D.palidiforns is sister species with D. sulfurigaster, and D.pandora with D.bipectinata.
+# Therefore, I can copy the above style to incorporate D.pandora into the tree
+# It's known that D.pandora is sister species with D.bipectinata.
 # For simplicity, assume that the newly added tip is halfway along the edge. Then the tree can be written as below:
 t.all <- read.tree(text = "(((((D.melanogaster:0.023028,D.simulans:0.016768)Node1:0.069284,D.pseudotakahashii:0.070281)Node2:0.061871,
                    (D.bunnanda:0.05867,D.birchii:0.061723)Node3:0.079749)Node4:0.018618,
-                   (D.pseudoananassae:0.022019,(D.bipectinata:0.0091415,D.pandora:0.0091415)Node5:0.0091415)Node6:0.130325)Node7:0.105535,
-                   (D.rubida:0.104915,(D.sulfurigaster:0.055463,D.palidifrons:0.055463)Node8:0.055463)Node9:0.071313)Node10;")
+                   (D.pseudoananassae:0.022019,(D.bipectinata:0.0091415, D.pandora:0.0091415)Node5:0.0091415)Node6:0.130325)Node7:0.105535,
+                   (D.rubida:0.104915,(D.sulfurigaster:0.015081,D.pallidifrons:0.025476)Node8:0.095845)Node9:0.071313)Node10;")
 ## Supplementary Figure 3A - phylogeny of all species
 plot(t.all)
 # the species (tips) that are examnined in the tpc experiment are below:
-tip.tpc <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.sulfurigaster", "D.birchii", "D.palidifrons")
+tip.tpc <- c("D.bunnanda", "D.pandora", "D.bipectinata", "D.pseudoananassae", "D.sulfurigaster", "D.birchii", "D.pallidifrons")
 # prune my.tree accordingly:
 t.tree <- keep.tip(t.all, t.all$tip.label[match(tip.tpc, t.all$tip.label)])
 # ultrametric tree - needed to calculate the inverse matrix
@@ -377,7 +482,7 @@ t.tree <- force.ultrametric.extend(t.tree)
 ## Supplementary Figure 3B - uphylogeny of the seven species used in thermal traits regression
 plot(t.tree)
 # to match the tip name here with the species name in other datasets
-new_tip <- c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons")
+new_tip <- c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons")
 t.tree$tip.label <- new_tip[match(t.tree$tip.label,tip.tpc)]
 ## create the between-level covariance matrix based on the phylo dataset. VERY USEFUL!!
 inv.phylo <- MCMCglmm::inverseA(t.tree, nodes = "TIPS", scale = TRUE) # inverseA(): Inverse Relatedness Matrix and Phylogenetic Covariance Matrix
@@ -392,7 +497,7 @@ fit.RTopt <- brm(
   family = gaussian(),
   data2 = list(A = A))
 # Result-2.Thermal perfomance curves
-# "The temperature for optimal reproductive performance, RTopt, did not correlate with their distribution patterns (Coefficient = 0.10, 95% credible interval -2.81 – 3.05). "
+# "The temperature for optimal reproductive performance, RTopt, did not correlate with their distribution patterns (Coefficient = 0.09, 95% credible interval -2.83 – 3.01). "
 summary(fit.RTopt)
 plot(fit.RTopt, pars = c("hIndex"))
 
@@ -401,9 +506,10 @@ fit.RTmax <- brm(
   RTmax.med ~ hIndex + (1|gr(t.tree, cov = A)),
   data = RT.traits2, 
   family = gaussian(),
-  data2 = list(A = A))
+  data2 = list(A = A),
+  control = list(adapt_delta = 0.95))
 # Result-4.Heat tolerance
-# "species whose distribution were biased towards lowland consistently had higher RTmax (Figure 3e. Coefficient = -3.01, 95% credible interval = - 5.08 – - 0.72). "
+# "species whose distribution were biased towards lowland consistently had higher RTmax (Figure 3e. Coefficient = -3.06, 95% credible interval = - 5.30 – - 0.88). "
 summary(fit.RTmax)
 plot(fit.RTmax, pars = c("hIndex"))
 
@@ -414,7 +520,7 @@ fit.RTmin <- brm(
   family = gaussian(),
   data2 = list(A = A))
 # Result-3.Cold tolerance
-# "Values of RTmin were not correlated with the species distribution patterns (Figure 3a. Coefficient = -0.35, 95% credible interval = -4.69 – 3.49). "
+# "Values of RTmin were not correlated with the species distribution patterns (Figure 3a. Coefficient = -0.41, 95% credible interval = -4.15 – 3.43). "
 summary(fit.RTmin)
 plot(fit.RTmin, pars = c("hIndex"))
 
@@ -437,7 +543,7 @@ fit.29C <- brm(
   family = negbinomial(link = "log"),
   data2 = list(A = A))
 # Result-4.Heat tolerance
-# "Reproductive performance at 29°C also decreased with hIndex (Figure 3f. Coefficient = -5.70, 95% credible interval -8.79 – -2.54). "
+# "Reproductive performance at 29°C also decreased with hIndex (Figure 3f. Coefficient = -5.80, 95% credible interval -9.37 – -2.50). "
 summary(fit.29C) 
 plot(fit.29C, pars = c("hIndex"))
 
@@ -460,7 +566,7 @@ fit.17C <- brm(
   family = negbinomial(link = "log"),
   data2 = list(A = A))
 # Result-3.Cold tolerance
-# "Similarly, upland-biased species did not show higher fecundity at the low temperature, 17°C (Figure 3b. Coefficient = -0.21, 95% credible interval -3.96 – 3.42). "
+# "Similarly, upland-biased species did not show higher fecundity at the low temperature, 17°C (Figure 3b. Coefficient = -0.27, 95% credible interval -3.80 – 3.05). "
 summary(fit.17C)  
 plot(fit.17C, pars = c("hIndex"))
 
@@ -472,12 +578,13 @@ rec.data %>%
   select(RS, dailyRS.rec, hIndex, round, spName) %>%
   mutate(t.tree = spName, rec = ifelse(RS > 0, 1, 0))-> test.data
 # with phylogenetic correction by brms - zero_inflated_negative binomial(RS) - no convergence
-# with phylogenetic correction by brms - zero_inflated_binomial(recovery/non-recovery) - poor convergence but acceptable
+# with phylogenetic correction by brms - zero_inflated_negative binomial(recovery/non-recovery) - poor convergence
+# with phylogenetic correction by brms - bernoulli(recovery/non-recovery) - good convergence
 # upland species are less likely to recover their reproduction, but not significant
 fit.rec29C <- brm(
   rec ~ hIndex + round + (1|spName) + (1|gr(t.tree, cov = A)),
   data = test.data, 
-  family = zero_inflated_binomial(link = "logit", link_zi = "logit"),
+  family = bernoulli,
   data2 = list(A = A),
   control = list(adapt_delta = 0.90))
 # Result-4.Heat tolerance - quantitative results not included
@@ -499,7 +606,7 @@ fit.rec14C <- brm(
   data2 = list(A = A),
   control = list(adapt_delta = 0.90))
 # Results-3.cold tolerance
-# "This recovered fecundity showed a minor but non-significant increase among upland species (Figure 3c. Coefficient = 0.32, 95% credible interval -0.62 – 1.09). "
+# "This recovered fecundity showed a minor but non-significant increase among upland species (Figure 3c. Coefficient = 0.33, 95% credible interval -0.55 – 1.14). "
 summary(fit.rec14C) 
 
 # knockdown in 40C #
@@ -602,11 +709,11 @@ sink()
 
 ## Figure 3 - Thermal traits ~ hIndex plot (4*2)
 # define the levels for the factor(spName) for all the dataset needed
-pars.est_ci$sp.list <- factor(pars.est_ci$sp.list,levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
-fec.data$spName <- factor(fec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
-rec.data$spName <- factor(rec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
-hot.data$spName <- factor(hot.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
-cold.data$spName <- factor(cold.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "palidifrons", "simulans", "melanogaster"))
+pars.est_ci$sp.list <- factor(pars.est_ci$sp.list,levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
+fec.data$spName <- factor(fec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
+rec.data$spName <- factor(rec.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
+hot.data$spName <- factor(hot.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
+cold.data$spName <- factor(cold.data$spName, levels = c("bunnanda", "pandora", "bipectinata", "pseudoananassae", "sulfurigaster", "birchii", "pallidifrons", "simulans", "melanogaster"))
 # individual plots
 p1.1 <- pars.est_ci %>%
   filter(sp.list != "melanogaster" & sp.list != "simulans") %>%
@@ -670,7 +777,7 @@ p4.1 <- cold.data %>%
   ylab("Coldshock recovery (mins)") + ylim(0,61) + xlab("Species") +
   theme(legend.position = "none") +
   theme(axis.title.y = element_text(size = 9), axis.text.y = element_text(size = 10), 
-        axis.title.x = element_text(size = 10), axis.text.x = element_text(size = 10)) +
+        axis.title.x = element_text(size = 10), axis.text.x = element_text(size = 10, face = "italic")) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black"))
 p4.2 <- hot.data %>%
@@ -681,7 +788,7 @@ p4.2 <- hot.data %>%
   ylab("Heatshock knockdown (mins)") + ylim(0,35) + xlab("Species") +
   theme(legend.position = "none") +
   theme(axis.title.y = element_text(size = 9), axis.text.y = element_text(size = 10), 
-        axis.title.x = element_text(size = 10), axis.text.x = element_text(size = 10)) +
+        axis.title.x = element_text(size = 10), axis.text.x = element_text(size = 10, face = "italic")) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black"))
 # put plots together (figure 3)
@@ -701,7 +808,7 @@ pars.est_ci %>%
   geom_errorbar(aes(ymin=RTopt.lower, ymax=RTopt.upper), width=.2) + 
   ylim(22, 27) + ylab("RTopt(°C)") + xlab("Drosophila species") + 
   theme(axis.title.y = element_text(size = 10), axis.text.y = element_text(size = 10),
-        axis.title.x = element_text(size = 10), axis.text.x = element_text(size = 10, angle = 45, hjust = 1)) + 
+        axis.title.x = element_text(size = 10, face = "italic"), axis.text.x = element_text(size = 10, angle = 45, hjust = 1, face = "italic")) + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black"))
 ggsave("RTopt.png", width = 4, height = 3)
@@ -712,7 +819,7 @@ pars <- rstan::extract(fit_tpc_sqrt_varingSD_noBound, pars = c("a","b","RTmax","
 swfun.sp <- function(x){
   switch (x,
           "A" = "bipectinata", "B" = "birchii", "C" = "bunnanda",
-          "D" = "melanogaster", "E" = "palidifrons", "F" = "pandora",
+          "D" = "melanogaster", "E" = "pallidifrons", "F" = "pandora",
           "G" = "pseudoananassae", "H" = "simulans", "I" = "sulfurigaster"
   )
 }
@@ -722,7 +829,7 @@ RTmaxs$spName <- sapply(as.character(RTmaxs$Var2), swfun.sp)
 RTmaxs %>%
   mutate(RTmax = Freq, RTmin = RTmins$Freq) %>%
   dplyr::select(spName, RTmax, RTmin) -> RT.traits
-RT.traits$spName <- factor(RT.traits$spName, levels = c("palidifrons", "birchii", "sulfurigaster", "pseudoananassae", "bipectinata", "pandora", "bunnanda", "simulans", "melanogaster"))
+RT.traits$spName <- factor(RT.traits$spName, levels = c("pallidifrons", "birchii", "sulfurigaster", "pseudoananassae", "bipectinata", "pandora", "bunnanda", "simulans", "melanogaster"))
 ## Result-2.thermal performance curves
 ## "There was no general trade-off between cold tolerance (RTmin) versus heat tolerance (RTmax) that correspond to their distribution types (Spearman’s rank correlation rho = -0.6, p value = 0.10). "
 cor.test(pars.est_ci$RTmax.med, pars.est_ci$RTmin.med, method = "spearman")
@@ -733,12 +840,11 @@ RT.traits %>%
   scale_color_manual(values = cc.tpc, name = "Drosophila species") + 
   theme(axis.title.y = element_text(size = 18), axis.title.x = element_text(size = 18)) +
   theme(axis.text.y = element_text(size = 15), axis.text.x = element_text(size = 15)) +
-  theme(legend.text=element_text(size=12), legend.title = element_text(size=15)) + 
+  theme(legend.text=element_text(size=12, face = "italic"), legend.title = element_text(size=15, face = "italic")) + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "black")) 
 ggsave("tradeOff.png", width = 7, height = 4)
   
-
 
 ## 4. short-term competition and equilirium states
 ########################## preparation #############################

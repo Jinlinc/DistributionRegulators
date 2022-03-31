@@ -1,0 +1,319 @@
+[1] "========= RTopt =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: RTopt.med ~ hIndex + (1 | gr(t.tree, cov = A)) 
+   Data: RT.traits2 (Number of observations: 7) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.99      0.58     0.12     2.39 1.01      615      907
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    24.44      0.86    22.81    26.23 1.01      445      757
+hIndex        0.09      1.40    -2.83     3.01 1.01     1283     1506
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.58      0.45     0.13     1.74 1.01      255      152
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= RTmax =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: RTmax.med ~ hIndex + (1 | gr(t.tree, cov = A)) 
+   Data: RT.traits2 (Number of observations: 7) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.69      0.46     0.05     1.81 1.00      941     1105
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    31.11      0.63    29.89    32.44 1.00     1235     1274
+hIndex       -3.06      1.11    -5.30    -0.88 1.00     1474     1226
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.47      0.36     0.10     1.45 1.00      593      771
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= RTmin =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: RTmin.med ~ hIndex + (1 | gr(t.tree, cov = A)) 
+   Data: RT.traits2 (Number of observations: 7) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.19      0.76     0.07     2.86 1.00      473     1493
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    15.08      1.13    12.92    17.48 1.01      272      641
+hIndex       -0.41      1.89    -4.15     3.43 1.01      603     1526
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     0.86      0.54     0.19     2.20 1.01      177      110
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= 29C =========="
+ Family: negbinomial 
+  Links: mu = log; shape = identity 
+Formula: adultT.com ~ hIndex + round + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: test.data (Number of observations: 56) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.58      0.43     0.03     1.65 1.00      668     1251
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.09      0.89     0.08     3.78 1.01      238       91
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept     3.99      0.83     2.39     5.70 1.00      837     1046
+hIndex       -5.80      1.65    -9.37    -2.50 1.01      329      172
+round2       -0.35      0.25    -0.85     0.14 1.00     1733     2014
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape     2.14      0.64     1.12     3.59 1.00     1317     2633
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= 17C =========="
+ Family: negbinomial 
+  Links: mu = log; shape = identity 
+Formula: adultT.com ~ hIndex + round + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: test.data (Number of observations: 56) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.78      0.55     0.05     2.10 1.00     1382     1718
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.05      0.73     0.04     2.72 1.00     1205     1789
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept     2.52      1.00     0.43     4.63 1.00     1762     1329
+hIndex       -0.27      1.70    -3.80     3.05 1.00     2448     2134
+round2        0.12      0.22    -0.32     0.56 1.00     4186     2548
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape     1.86      0.51     1.06     3.05 1.00     3453     2376
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= rec29C =========="
+ Family: bernoulli 
+  Links: mu = logit 
+Formula: rec ~ hIndex + round + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: test.data (Number of observations: 56) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     2.05      1.66     0.08     6.03 1.00     1188     1772
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     3.41      2.23     0.22     8.81 1.00     1278     1529
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept     1.78      2.98    -3.91     8.16 1.00     2241     2444
+hIndex       -9.34      6.88   -25.11     3.18 1.00     2090     2207
+round2        0.39      0.91    -1.38     2.15 1.00     4482     2810
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= rec14C =========="
+ Family: negbinomial 
+  Links: mu = log; shape = identity 
+Formula: RS ~ hIndex + round + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: test.data (Number of observations: 56) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.14      0.13     0.01     0.49 1.00      925     1012
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.18      0.18     0.01     0.68 1.00     1083     1485
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept     4.15      0.23     3.68     4.64 1.00     1623     1000
+hIndex        0.33      0.41    -0.55     1.14 1.00     2237     1470
+round2        0.03      0.12    -0.22     0.27 1.00     3370     2385
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape     5.35      1.23     3.27     8.05 1.00     4930     2919
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= heat kd F =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: kd.t ~ hIndex + round + position + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: hot.data2F (Number of observations: 126) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 6) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.57      1.02     0.12     4.04 1.00     1089     1162
+
+~t.tree (Number of levels: 6) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.90      1.26     0.11     4.89 1.01     1504     2049
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    15.50      1.77    11.90    18.96 1.00     1778     1277
+hIndex       -1.99      3.84    -9.48     5.71 1.00     1873     1357
+roundB       -0.83      0.53    -1.87     0.22 1.00     3753     2767
+roundC       -0.63      0.54    -1.70     0.41 1.00     3858     2918
+position      0.66      0.11     0.43     0.88 1.00     3565     2443
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     2.43      0.16     2.15     2.76 1.00     3938     2632
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= heat kd M =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: kd.t ~ hIndex + round + position + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: hot.data2M (Number of observations: 126) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 6) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.39      0.90     0.10     3.60 1.00     1128      946
+
+~t.tree (Number of levels: 6) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.42      1.14     0.06     4.28 1.00     1356     1809
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    19.65      1.71    16.03    23.04 1.00     2329     2372
+hIndex       -6.71      3.52   -13.70     0.50 1.00     2185     2041
+roundB       -2.46      0.54    -3.50    -1.41 1.00     4433     3207
+roundC       -1.40      0.53    -2.45    -0.37 1.00     4580     3237
+position      0.38      0.12     0.14     0.62 1.00     3670     2971
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     2.42      0.15     2.14     2.74 1.00     4810     2882
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= cold rc F =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: rc.t ~ hIndex + round + position + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: cold.data2F (Number of observations: 147) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     2.26      1.69     0.12     6.40 1.00     1057     1289
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     3.08      2.38     0.14     9.09 1.00      865      526
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    18.68      3.41    11.33    25.43 1.00     1261      521
+hIndex        8.49      5.44    -2.18    20.02 1.00     1877     1395
+roundB        1.34      1.31    -1.26     3.84 1.00     3720     2755
+roundC       -0.32      1.34    -2.92     2.30 1.00     3553     1813
+position      0.10      0.23    -0.36     0.54 1.01     4829     2659
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     6.58      0.40     5.85     7.39 1.00     4902     3023
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+[1] "========= cold rc M =========="
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: rc.t ~ hIndex + round + position + (1 | spName) + (1 | gr(t.tree, cov = A)) 
+   Data: cold.data2M (Number of observations: 147) 
+Samples: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+         total post-warmup samples = 4000
+
+Group-Level Effects: 
+~spName (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     5.73      2.83     0.89    12.32 1.00      861     1197
+
+~t.tree (Number of levels: 7) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     5.18      4.72     0.16    17.55 1.01      461      170
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    18.63      5.52     7.48    29.71 1.01     1272      601
+hIndex       13.04     11.17    -9.31    35.50 1.00     1776     2119
+roundB       -3.45      1.26    -5.80    -0.95 1.00     3864     2693
+roundC       -4.46      1.26    -6.92    -1.95 1.00     3900     3054
+position      0.38      0.20    -0.03     0.76 1.00     2151     2576
+
+Family Specific Parameters: 
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     6.28      0.38     5.57     7.07 1.00     5069     2798
+
+Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

@@ -1,9 +1,9 @@
 # Datasets Description
 
 ## Overview
-This repository provides the data for the manuscript "Small differences in upper thermal limits and interspecific competition jointly determine species distributions of rainforest Drosophila"
+This repository provides the data for the manuscript "Factors determining distributions of rainforest Drosophila shift from interspecific competition to high temperature with decreasing elevation"
 
-We investigated thermal tolerances and interspecific competition as causes of species turnover in the nine most abundant species of Drosophila along elevational gradients in the Australian Wet Tropics. Specifically, we 1) analyzed the distribution patterns of the studies Drosophila species; 2) fitted thermal performance curves; 3) tested the correlation between multiple thermal traits and distribution patterns; 4) fitted the Beverton-Holt model to decribed the single-generation intra- and inter-specific competition effect; 5) examined the long-term effect of competition and temperature on the population size of a pair of Drosophila species.
+We investigated thermal tolerances and interspecific competition as causes of species turnover in the nine most abundant species of Drosophila along elevational gradients in the Australian Wet Tropics. Specifically, we 1) analyzed the distribution patterns of the studies Drosophila species; 2) fitted thermal performance curves; 3) tested the correlation between multiple thermal traits and distribution patterns; 4) fitted the Beverton-Holt model to describe the single-generation intra- and inter-specific competition effect; 5) examined the long-term effect of competition and temperature on the population size of a pair of Drosophila species.
 
 
 ## Authors information
@@ -23,6 +23,14 @@ This dataset is to analyze the distribution pattens of the Drosophila species al
  * **`Transect`**: Two mountain ranges where the sampling was conducted  
  * **`Site`**: The name of the sampling sites. The first character indicate the transect and the following number indicate the elevation of the particular site. For example, "P880" indicates that the sample was collected on Paluma transect on 880 metre elevation. 
  * **`Host`**: The species identity of the sample. 
+ 
+ ### **`longtermClimate_formated.csv`** 
+ This dataset is the hourly temperautre and humidity of survey sites on Paluma and Kirama, Queensland, Australia, recorded from Apri 2016 to March 2017. Variables that were used in the analysis of this manuscript were described below:
+  * **`Site2016`**: It indicates the mountain range (Kirama or Paluma) and the elevation of the site. 
+  * **`Celsius`**: The recorded temperature.
+  * **`year_month`**: The year and month that the climate data was recorded.
+  * **`justTime.c`**: The corrected time of the day that the climate data was recorded.
+  * **`day`**: The date of the corresponding month that the climate data was recorded.
 
 ### **`TPC_data_without na.csv`** 
 This dataset is to analyze the reproductive thermal performance of the Drosophila species in the laboratory. We exposed flies to temperatures ranging from 14°C to 32°C and measured how their reproductive success changes with temperature. Variables were described below:
