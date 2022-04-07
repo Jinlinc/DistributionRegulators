@@ -1,4 +1,4 @@
-# Abiotic and abiotic regulators of species distribution
+# Abiotic and biotic regulators of species distribution
 
 ## Overview
 This repository provides the data, analysis code for the manuscript "Factors determining distributions of rainforest Drosophila shift from interspecific competition to high temperature with decreasing elevation"
